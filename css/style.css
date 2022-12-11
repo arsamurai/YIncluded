@@ -891,6 +891,27 @@ meter {
 #index .gallery .slick-list, #index .gallery .slick-slide {
   height: 513px;
 }
+#index .gallery .slick-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 0;
+  width: 50px;
+  height: 50px;
+}
+#index .gallery .slick-disabled {
+  display: none !important;
+}
+#index .gallery .slick-prev {
+  left: 37px;
+  z-index: 998;
+  background: url("/images/arrow.png") 0 0/100% no-repeat;
+  transform: rotate(180deg);
+}
+#index .gallery .slick-next {
+  background: url("/images/arrow.png") 0 0/100% no-repeat;
+  right: 37px;
+}
 #index .gallery__btn {
   margin-bottom: 56px;
 }
@@ -906,6 +927,9 @@ meter {
   }
   #index .gallery .slick-list, #index .gallery .slick-slide {
     height: 325px;
+  }
+  #index .gallery .slick-arrow {
+    display: none;
   }
   #index .gallery__btn {
     margin-bottom: 39px;

@@ -15,6 +15,6 @@ $(document).ready(function () {
 		$($(this).attr('href')).addClass('tabs__block-active');
 	});
 
-	$('#gallery__slider').slick();
+	$('#gallery__slider').slick({infinite: false});
 	
 })
