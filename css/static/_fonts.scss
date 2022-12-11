@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'ObjectSans-Heavy';
+  src: local('ObjectSans-Heavy'), local('ObjectSans-Heavy'),
+  url('/fonts/ObjectSans-Heavy.woff2') format('woff2'),
+  url('/fonts/ObjectSans-Heavy.woff') format('woff'),
+  url('/fonts/ObjectSans-Heavy.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ObjectSans-Regular';
+  src: local('ObjectSans-Regular'), local('ObjectSans-Regular'),
+  url('/fonts/ObjectSans-Regular.woff2') format('woff2'),
+  url('/fonts/ObjectSans-Regular.woff') format('woff'),
+  url('/fonts/ObjectSans-Regular.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
