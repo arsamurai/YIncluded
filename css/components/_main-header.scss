@@ -1,0 +1,36 @@
+.main-header {
+	padding: 20px 0;
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__icons {
+		display: flex;
+		align-items: center;
+	}
+	&__icon {
+		margin: 0 10px;
+		&-link img {
+			background-color: transparent;
+			width: 27px;
+			height: 35px;
+			object-fit: contain;
+		}
+		.instagram img{
+			width: 37px;
+			height: 45px;
+		}
+	}
+	@media screen and (max-width: 991px) {
+		padding: 10px 0;
+		&__icons {
+			margin-left: 50px;
+		}
+	}
+	@media screen and (max-width: 576px) {
+		&__inner {
+			display: none;
+		}
+	}
+}

@@ -1,40 +1,4 @@
 #index {
-  .header {
-    padding: 20px 0;
-    &__inner {
-      display: flex;
-      justify-content: space-between;
-			align-items: center;
-    }
-    &__icons {
-      display: flex;
-			align-items: center;
-    }
-    &__icon {
-      margin: 0 10px;
-			&-link img {
-				background-color: transparent;
-				width: 27px;
-				height: 35px;
-				object-fit: contain;
-			}
-			.instagram img{
-				width: 37px;
-				height: 45px;
-			}
-    }
-    @media screen and (max-width: 991px) {
-      padding: 10px 0;
-      &__icons {
-        margin-left: 50px;
-      }
-    }
-    @media screen and (max-width: 576px) {
-      &__inner {
-        display: none;
-      }
-    }
-  }
 
   .preview {
     height: calc(100vh - 71px);
@@ -382,7 +346,7 @@
       &__btn {
         order: -1;
         margin-right: 12px;
-        button {
+        a {
           height: 100%;
           width: 208px;
           font-size: 26px;
@@ -399,19 +363,6 @@
 				&::before {
 					display: none;
 				}
-				span{
-					padding-right: 78px;
-					position: relative;
-				}
-				span::before {
-					content: "";
-					position: absolute;
-					height: 2px;
-					width: 111px;
-					left: 53px;
-					top: 27px;
-					background-color: $black;
-				}
 			}
       &__inner {
         height: 154px;
@@ -424,7 +375,7 @@
       }
       &__btn {
         order: -1;
-        button {
+        a {
           height: 100%;
           width: 108px;
           font-size: 16px;
@@ -573,6 +524,10 @@
       }
       &__btn {
         margin-bottom: 32px;
+				a {
+					max-width: 330px;
+					height: 35px;
+				}
       }
     }
   }

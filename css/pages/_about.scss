@@ -1,15 +1,15 @@
 #about {
-	main {
-		display: flex;
-		flex-direction: column;
-	}
+	display: flex;
+	flex-direction: column;
+
 	.container {
 		max-width: 1390px;
 	}
 	
-	.btn button{
+	.btn a{
 		font-size: 20px;
     line-height: 20px;
+		height: 64px;
 	}
 
   .gallery {
@@ -73,7 +73,7 @@
       }
       &__btn {
         padding: 0;
-        button {
+        a {
           max-width: 100%;
           height: 62px;
           text-align: center;
@@ -184,7 +184,7 @@
 						line-height: 14px;
 					}
 				}
-				&__btn button {
+				&__btn a {
 					max-width: 337px;
 					height: auto;
 				}
@@ -194,7 +194,7 @@
   }
 
 	@media screen and (max-width: 576px) {
-		.btn button{
+		.btn a {
 			font-size: 14px;
 			line-height: 14px;
 		}
@@ -206,9 +206,10 @@
 				margin-bottom: 16px;
 				max-width: 320px;
 				padding: 0;
-				button {
+				a {
 					height: 34px;
 					padding: 9px;
+					max-width: 320px;
 				}
 			}
 		}
