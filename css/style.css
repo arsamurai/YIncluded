@@ -364,12 +364,25 @@ meter {
 #index .header__inner {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 #index .header__icons {
   display: flex;
+  align-items: center;
 }
 #index .header__icon {
   margin: 0 10px;
+}
+#index .header__icon-link img {
+  background-color: transparent;
+  width: 27px;
+  height: 35px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+#index .header__icon .instagram img {
+  width: 37px;
+  height: 45px;
 }
 @media screen and (max-width: 991px) {
   #index .header {
@@ -385,7 +398,7 @@ meter {
   }
 }
 #index .preview {
-  height: calc(100vh - 61px);
+  height: calc(100vh - 71px);
 }
 #index .preview__info {
   height: calc(100vh - 304px);
