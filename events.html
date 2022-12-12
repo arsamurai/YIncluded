@@ -20,12 +20,13 @@
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script src="/js/app.js"></script>
+    <script src="/js/filters.js"></script>
     <title>YI</title>
   </head>
   <body>
     <!-- Header -->
     <header class="header events-header">
-      <div class="container container-special">
+      <div class="container-special">
         <h1 class="events-title page-title">events</h1>
       </div>
       <ul class="sidebar" id="sidebar">
@@ -51,14 +52,17 @@
       <div class="burger" id="burger">
         <div class="burger__menu"><span></span><span></span><span></span></div>
       </div>
+			<div class="filter-btn" id="filter-btn">
+				<img class="filter-btn__img" src="/images/filter.png" alt="filter-close">
+			</div>
     </header>
 
     <!-- Main -->
     <main id="events">
-      <div class="container container-special">
+      <div class="container-special">
         <div class="events__inner">
           <div class="filter">
-            <div class="filter-close"></div>
+						<div class="filter-close" id="filter-close"><span></span><span></span></div>
             <h3 class="filter__title">Filter</h3>
             <div class="time">
               <h4 class="filter__subtitle">Events</h4>
@@ -400,7 +404,7 @@
               ex ea commodo consequat.
             </p>
             <div class="events__items">
-              <a href="/event.html" class="events__item">
+              <a href="/event.html" class="events__item" data-filter-time="old" data-filter-project-id="24">
                 <div class="events__item-img">
                   <img src="/images/default.jpeg" alt="events__item-img" />
                 </div>

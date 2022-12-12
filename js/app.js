@@ -5,6 +5,14 @@ $(document).ready(function () {
 		$(this).toggleClass('active')
 	});
 
+	$('#filter-btn').on('click', function () {
+		$('.filter').addClass('active')
+	});
+
+	$('#filter-close').on('click', function () {
+		$('.filter').removeClass('active')
+	});
+
 	$('.tabs__item').on("click", function (e) {
 		e.preventDefault();
 		

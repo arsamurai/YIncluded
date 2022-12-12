@@ -70,6 +70,9 @@ img {
 .container-special {
   max-width: 1440px;
   padding: 0 40px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 .container-big {
   max-width: 1560px;
@@ -324,6 +327,7 @@ meter {
   height: 100%;
   margin: 0;
   z-index: 999;
+  padding: 50px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1258,7 +1262,7 @@ meter {
   margin-bottom: 114px;
 }
 #events .filter {
-  max-width: 300px;
+  max-width: 400px;
   width: 100%;
   padding-right: 20px;
 }
@@ -1270,6 +1274,28 @@ meter {
 #events .filter__subtitle {
   font-size: 16px;
   line-height: 19px;
+}
+#events .filter-close {
+  position: absolute;
+  right: 16px;
+  top: 15px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  display: none;
+}
+#events .filter-close span {
+  width: 20px;
+  height: 2px;
+  position: absolute;
+  top: 8px;
+  background-color: #000;
+}
+#events .filter-close span:first-child {
+  transform: rotate(45deg);
+}
+#events .filter-close span:nth-child(2) {
+  transform: rotate(-45deg);
 }
 #events .filter .choices {
   font-size: 19px;
@@ -1287,23 +1313,20 @@ meter {
 #events .filter label {
   white-space: break-spaces;
 }
-#events .evn .filter .close {
-  display: none;
-}
-#events .evn .filter h3 {
+#events .filter h3 {
   font-size: 22px;
   line-height: 27px;
   font-weight: bold;
 }
-#events .evn .filter .time {
+#events .filter .time {
   margin-top: 20px;
 }
-#events .evn .filter h4 {
+#events .filter h4 {
   font-weight: bold;
   font-size: 16px;
   line-height: 19px;
 }
-#events .evn .filter ul {
+#events .filter ul {
   margin-left: 25px;
   list-style: none;
 }
@@ -1324,22 +1347,18 @@ meter {
   margin: 0 auto;
   background: url("/images/checkbox.png") 0 0 no-repeat;
 }
-#events .evn .filter .projects_start {
+#events .filter .projects_start {
   margin-top: 20px;
   white-space: nowrap;
 }
-#events .evn .filter h4 {
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 19px;
-}
-#events .evn .filter .projects_start details {
+#events .filter .projects_start details {
   margin-top: 25px;
   margin-left: 10px;
 }
 #events details summary {
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 55%;
 }
 #events details summary:after {
@@ -1414,15 +1433,62 @@ meter {
     gap: 30px;
   }
 }
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1100px) {
+  #events .events__main {
+    max-width: 559px;
+  }
   #events .events__items {
     grid-template-columns: repeat(2, 1fr);
+  }
+  #events .events__item {
+    max-width: 100%;
+  }
+  #events .events__item-img {
+    max-width: 100%;
+  }
+  #events .events__item:not(:nth-child(-n+4)) {
+    display: none;
+  }
+}
+@media screen and (max-width: 878px) {
+  #events .events__main {
+    max-width: 100%;
+  }
+  #events .filter {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+    margin: 0;
+    z-index: 1001;
+    background-color: #fff;
+    overflow-y: auto;
+    padding: 20px;
+    transform: translateX(-100%);
+    transition: all linear 0.3s;
+  }
+  #events .filter-close {
+    display: block;
+  }
+  #events .filter.active {
+    transform: translateY(0);
   }
 }
 @media screen and (max-width: 576px) {
   #events {
     padding: 0;
     padding-top: 74px;
+  }
+  #events .container-special {
+    padding: 0;
+  }
+  #events .filter {
+    width: 100%;
+  }
+  #events .events__inner {
+    margin-bottom: 0;
   }
   #events .events__text {
     margin: 42px 0 62px;
@@ -1468,6 +1534,32 @@ meter {
   }
 }
 
+.filter-btn {
+  display: none;
+  width: 65px;
+  height: 50px;
+  background-color: #fff;
+  box-shadow: 4px 4px 15px rgba(140, 140, 140, 0.25);
+  border-radius: 0px 0px 10px 0px;
+  position: fixed;
+  left: 73px;
+  top: 0;
+  z-index: 1000;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.filter-btn__img {
+  width: 35px;
+  height: 29px;
+  position: relative;
+}
+
+@media screen and (max-width: 878px) {
+  .filter-btn {
+    display: flex;
+  }
+}
 @media screen and (max-width: 576px) {
   .events-title {
     display: none;
