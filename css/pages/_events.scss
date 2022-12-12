@@ -109,14 +109,22 @@
     justify-content: space-around;
     align-items: center;
     width: 55%;
+		cursor: pointer;
   }
   details summary:after {
     content: "";
     background: url("/images/angle-right-solid.svg") 0 0 no-repeat;
+		transition: all linear .2s;
     width: 15px;
     height: 15px;
     margin: 0 auto;
+		margin-top: 0;
   }
+
+	details[open] > summary:after  {
+		transform: rotate(90deg);
+		margin-top: 8px;
+	}
 
   .events__slider-wrapper {
     position: relative;

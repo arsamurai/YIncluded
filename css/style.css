@@ -1360,13 +1360,20 @@ meter {
   justify-content: space-around;
   align-items: center;
   width: 55%;
+  cursor: pointer;
 }
 #events details summary:after {
   content: "";
   background: url("/images/angle-right-solid.svg") 0 0 no-repeat;
+  transition: all linear 0.2s;
   width: 15px;
   height: 15px;
   margin: 0 auto;
+  margin-top: 0;
+}
+#events details[open] > summary:after {
+  transform: rotate(90deg);
+  margin-top: 8px;
 }
 #events .events__slider-wrapper {
   position: relative;
