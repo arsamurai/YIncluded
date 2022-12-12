@@ -2,7 +2,7 @@
   position: fixed;
   top: 0;
   bottom: 0;
-  width: 100%;
+  width: 30%;
   height: 100%;
   margin: 0;
   z-index: 999;
@@ -20,6 +20,10 @@
 
 	@media screen and (max-width: 991px) {
 		font-size: 20px;
+	}
+
+	@media screen and (max-width: 576px) {
+		width: 100%;
 	}
 
 }

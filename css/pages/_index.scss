@@ -8,8 +8,8 @@
       justify-content: space-between;
     }
     &__title {
-      font-size: 8vw;
-      line-height: 143px;
+      font-size: 140px;
+			line-height: 143px;
       padding: 49px 0;
       text-align: right;
       padding-right: 10px;
@@ -17,7 +17,7 @@
     &__sidebar {
       padding: 50px 40px;
       max-width: 187px;
-      width: 100%;
+      width: 30%;
       min-height: 241px;
       max-height: 443px;
       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25),
@@ -36,6 +36,16 @@
 		.burger {
 			display: none;
 		}
+		@media screen and (max-width: 1300px) {
+      &__title {
+				font-size: 120px;
+			}
+    }
+		@media screen and (max-width: 1115px) {
+      &__title {
+				font-size: 90px;
+			}
+    }
     @media screen and (max-width: 991px) {
       height: auto;
       &__title {
@@ -67,6 +77,9 @@
 			}
     }
     @media screen and (max-width: 576px) {
+			&__sidebar {
+				width: 100%;
+			}
       &__title {
         font-size: 36px;
         line-height: 37px;
@@ -79,11 +92,11 @@
   }
 
   .about {
+		border-bottom: 11px solid $black;
     &__inner {
       display: flex;
       justify-content: space-between;
       padding-bottom: 48px;
-      border-bottom: 11px solid $black;
       position: relative;
     }
     &__img {
@@ -127,18 +140,24 @@
       line-height: 33px;
     }
     &__nav-btn {
-      max-width: 446px;
-      width: 100%;
-      height: 64px;
-      font-size: 40px;
-      line-height: 41px;
-      background-color: $black;
-      color: $white;
-      text-align: center;
+			display: flex;
+			justify-content: flex-start;
+			a {
+				max-width: 446px;
+				width: 100%;
+				height: 64px;
+				font-size: 40px;
+				line-height: 41px;
+				background-color: $black;
+				color: $white;
+				text-align: center;
+				@include flex(center, center);
+			}
     }
     &__nav-text {
       font-size: 40px;
       line-height: 41px;
+			letter-spacing: 1px;
     }
 
     @media screen and (max-width: 1378px) {
@@ -178,6 +197,10 @@
       &__nav {
         text-align: center;
       }
+			&__nav-btn {
+				display: flex;
+				justify-content: center;
+			}
       &__text {
         margin-top: 70px;
       }
@@ -221,7 +244,7 @@
         display: flex;
         align-items: center;
       }
-      &__nav-btn {
+      &__nav-btn a{
         max-width: 100%;
         font-size: 13px;
         line-height: 13px;
@@ -249,7 +272,7 @@
 				width: calc(100% + 30px);
 				position: absolute;
 				left: -30px;
-				top: 50%;
+				top: 57%;
 				transform: translateY(-50%);
 				background-color: $black;
 			}
@@ -536,35 +559,16 @@
     margin-bottom: 104px;
     border-bottom: 11px solid $black;
     &__slider {
-      margin: 61px 0 81px;
-      width: 100%;
+      margin: 61px auto 81px;
       height: 513px;
-      &-item {
-        height: 100%;
-      }
     }
 		.slick-list, .slick-slide {
 			height: 513px;
 		}
-		.slick-arrow {
-			position: absolute;
-			top: 50%;
-			transform: translateY(-50%);
-			font-size: 0;
-			width: 50px;
-			height: 50px;
-		}
-		.slick-disabled {
-			display: none !important;
-		}
 		.slick-prev {
 			left: 37px;
-			z-index: 998;
-			background: url("/images/arrow.png") 0 0 / 100% no-repeat;
-			transform: rotate(180deg);
 		}
 		.slick-next {
-			background: url("/images/arrow.png") 0 0 / 100% no-repeat;
 			right: 37px;
 		}
     &__btn {
@@ -581,9 +585,6 @@
       }
 			.slick-list, .slick-slide {
 				height: 325px;
-			}
-			.slick-arrow {
-				display: none;
 			}
       &__btn {
         margin-bottom: 39px;

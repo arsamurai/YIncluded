@@ -16,5 +16,6 @@ $(document).ready(function () {
 	});
 
 	$('#gallery__slider').slick({infinite: false});
+	$('#events__slider').slick({infinite: false});
 	
 })

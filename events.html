@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="/js/app.js"></script>
+    <title>YI</title>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header events-header">
+      <div class="container container-special">
+        <h1 class="events-title page-title">events</h1>
+      </div>
+      <ul class="sidebar" id="sidebar">
+        <li class="sidebar-item">
+          <a href="/about.html" class="sidebar-link">about us</a>
+        </li>
+        <li class="sidebar-item">
+          <a href="#" class="sidebar-link">gallery</a>
+        </li>
+        <li class="sidebar-item">
+          <a href="/events.html" class="sidebar-link">events</a>
+        </li>
+        <li class="sidebar-item">
+          <a href="#" class="sidebar-link">projects</a>
+        </li>
+        <li class="sidebar-item">
+          <a href="#" class="sidebar-link">team</a>
+        </li>
+        <li class="sidebar-item">
+          <a href="#" class="sidebar-link">contact us</a>
+        </li>
+      </ul>
+      <div class="burger" id="burger">
+        <div class="burger__menu"><span></span><span></span><span></span></div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main id="events">
+      <div class="container container-special">
+        <div class="events__inner">
+          <div class="filter">
+            <div class="filter-close"></div>
+            <h3 class="filter__title">Filter</h3>
+            <div class="time">
+              <h4 class="filter__subtitle">Events</h4>
+              <ul class="choices time__choices">
+                <li class="choices-item">
+                  <a href="/">
+                    <input
+                      class="filterCheckBox"
+                      data-filter-name="time"
+                      data-filter-value="today"
+                      type="checkbox"
+                      id="today"
+                      checked
+                    />
+                    <label for="today" class="checkboxes">Today</label>
+                  </a>
+                </li>
+                <li class="choices-item">
+                  <a href="/">
+                    <input
+                      class="filterCheckBox"
+                      data-filter-name="time"
+                      data-filter-value="future"
+                      type="checkbox"
+                      id="future"
+                      checked
+                    />
+                    <label for="future" class="checkboxes">Future</label>
+                  </a>
+                </li>
+                <li class="choices-item">
+                  <a href="/">
+                    <input
+                      class="filterCheckBox"
+                      data-filter-name="time"
+                      data-filter-value="old"
+                      type="checkbox"
+                      id="old"
+                      checked
+                    />
+                    <label for="old" class="checkboxes">Old</label>
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="projects-start">
+              <h4 class="filter__subtitle">Start of the project</h4>
+              <details>
+                <summary>2022</summary>
+
+                <ul class="choices">
+                  <li>
+                    <a href="/">
+                      <input
+                        class="filterCheckBox"
+                        data-filter-name="project-id"
+                        data-filter-value="27"
+                        type="checkbox"
+                        id="project_27"
+                        checked
+                      />
+                      <label for="project_27" class="checkboxes"
+                        >Club for Loving Mothers</label
+                      >
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/">
+                      <input
+                        class="filterCheckBox"
+                        data-filter-name="project-id"
+                        data-filter-value="26"
+                        type="checkbox"
+                        id="project_26"
+                        checked
+                      />
+                      <label for="project_26" class="checkboxes"
+                        >Fotovýstava Příběhy Prahy 14
+                      </label>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/">
+                      <input
+                        class="filterCheckBox"
+                        data-filter-name="project-id"
+                        data-filter-value="25"
+                        type="checkbox"
+                        id="project_25"
+                        checked
+                      />
+                      <label for="project_25" class="checkboxes"
+                        >IN-CREATE</label
+                      >
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/">
+                      <input
+                        class="filterCheckBox"
+                        data-filter-name="project-id"
+                        data-filter-value="24"
+                        type="checkbox"
+                        id="project_24"
+                        checked
+                      />
+                      <label for="project_24" class="checkboxes"
+                        >Cooperation with the City Council of Prague 14</label
+                      >
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/">
+                      <input
+                        class="filterCheckBox"
+                        data-filter-name="project-id"
+                        data-filter-value="23"
+                        type="checkbox"
+                        id="project_23"
+                        checked
+                      />
+                      <label for="project_23" class="checkboxes"
+                        >Youth Included Project</label
+                      >
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/">
+                      <input
+                        class="filterCheckBox"
+                        data-filter-name="project-id"
+                        data-filter-value="22"
+                        type="checkbox"
+                        id="project_22"
+                        checked
+                      />
+                      <label for="project_22" class="checkboxes"
+                        >Cultural Power</label
+                      >
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/">
+                      <input
+                        class="filterCheckBox"
+                        data-filter-name="project-id"
+                        data-filter-value="21"
+                        type="checkbox"
+                        id="project_21"
+                        checked
+                      />
+                      <label for="project_21" class="checkboxes">EDEEY</label>
+                    </a>
+                  </li>
+                </ul>
+              </details>
+              <details>
+                <summary>2021</summary>
+
+                <ul class="choices">
+                  <li>
+                    <a href="/">
+                      <input
+                        class="filterCheckBox"
+                        data-filter-name="project-id"
+                        data-filter-value="19"
+                        type="checkbox"
+                        id="project_19"
+                        checked
+                      />
+                      <label for="project_19" class="checkboxes"
+                        >Avast Foundation</label
+                      >
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/">
+                      <input
+                        class="filterCheckBox"
+                        data-filter-name="project-id"
+                        data-filter-value="11"
+                        type="checkbox"
+                        id="project_11"
+                        checked
+                      />
+                      <label for="project_11" class="checkboxes">ICT4TCN</label>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/">
+                      <input
+                        class="filterCheckBox"
+                        data-filter-name="project-id"
+                        data-filter-value="10"
+                        type="checkbox"
+                        id="project_10"
+                        checked
+                      />
+                      <label for="project_10" class="checkboxes"
+                        >Out of the box society</label
+                      >
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/">
+                      <input
+                        class="filterCheckBox"
+                        data-filter-name="project-id"
+                        data-filter-value="9"
+                        type="checkbox"
+                        id="project_9"
+                        checked
+                      />
+                      <label for="project_9" class="checkboxes">RIDE</label>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/">
+                      <input
+                        class="filterCheckBox"
+                        data-filter-name="project-id"
+                        data-filter-value="8"
+                        type="checkbox"
+                        id="project_8"
+                        checked
+                      />
+                      <label for="project_8" class="checkboxes"
+                        >Artistic Nomads</label
+                      >
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/">
+                      <input
+                        class="filterCheckBox"
+                        data-filter-name="project-id"
+                        data-filter-value="7"
+                        type="checkbox"
+                        id="project_7"
+                        checked
+                      />
+                      <label for="project_7" class="checkboxes">MAX</label>
+                    </a>
+                  </li>
+                </ul>
+              </details>
+              <details>
+                <summary>2020</summary>
+
+                <ul class="choices">
+                  <li>
+                    <a href="/">
+                      <input
+                        class="filterCheckBox"
+                        data-filter-name="project-id"
+                        data-filter-value="18"
+                        type="checkbox"
+                        id="project_18"
+                        checked
+                      />
+                      <label for="project_18" class="checkboxes"
+                        >Youth Mythbusters</label
+                      >
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/">
+                      <input
+                        class="filterCheckBox"
+                        data-filter-name="project-id"
+                        data-filter-value="17"
+                        type="checkbox"
+                        id="project_17"
+                        checked
+                      />
+                      <label for="project_17" class="checkboxes"
+                        >Finding Answers through Writing</label
+                      >
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/">
+                      <input
+                        class="filterCheckBox"
+                        data-filter-name="project-id"
+                        data-filter-value="15"
+                        type="checkbox"
+                        id="project_15"
+                        checked
+                      />
+                      <label for="project_15" class="checkboxes"
+                        >Urban Creatives</label
+                      >
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/">
+                      <input
+                        class="filterCheckBox"
+                        data-filter-name="project-id"
+                        data-filter-value="14"
+                        type="checkbox"
+                        id="project_14"
+                        checked
+                      />
+                      <label for="project_14" class="checkboxes"
+                        >Uniting Power of Film
+                      </label>
+                    </a>
+                  </li>
+                </ul>
+              </details>
+            </div>
+          </div>
+
+          <div class="events__main">
+            <div class="events__slider-wrapper">
+              <div class="events__slider" id="events__slider">
+                <div class="events__slider-item">
+                  <img src="/images/default.jpeg" alt="slider-img" />
+                </div>
+                <div class="events__slider-item">
+                  <img src="/images/default.jpeg" alt="slider-img" />
+                </div>
+                <div class="events__slider-item">
+                  <img src="/images/default.jpeg" alt="slider-img" />
+                </div>
+              </div>
+              <div class="events__subtext">events</div>
+            </div>
+            <p class="events__text">
+              lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. lorem ipsum dolor sit
+              amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat.
+            </p>
+            <div class="events__items">
+              <a href="/event.html" class="events__item">
+                <div class="events__item-img">
+                  <img src="/images/default.jpeg" alt="events__item-img" />
+                </div>
+                <div class="events__item-info">
+                  <p class="events__item-title">Event title</p>
+                  <p class="events__item-date">08.11</p>
+                </div>
+              </a>
+              <a href="/event.html" class="events__item">
+                <div class="events__item-img">
+                  <img src="/images/default.jpeg" alt="events__item-img" />
+                </div>
+                <div class="events__item-info">
+                  <p class="events__item-title">Event title</p>
+                  <p class="events__item-date">08.11</p>
+                </div>
+              </a>
+              <a href="/event.html" class="events__item">
+                <div class="events__item-img">
+                  <img src="/images/default.jpeg" alt="events__item-img" />
+                </div>
+                <div class="events__item-info">
+                  <p class="events__item-title">Event title</p>
+                  <p class="events__item-date">08.11</p>
+                </div>
+              </a>
+              <a href="/event.html" class="events__item">
+                <div class="events__item-img">
+                  <img src="/images/default.jpeg" alt="events__item-img" />
+                </div>
+                <div class="events__item-info">
+                  <p class="events__item-title">Event title</p>
+                  <p class="events__item-date">08.11</p>
+                </div>
+              </a>
+              <a href="/event.html" class="events__item">
+                <div class="events__item-img">
+                  <img src="/images/default.jpeg" alt="events__item-img" />
+                </div>
+                <div class="events__item-info">
+                  <p class="events__item-title">Event title</p>
+                  <p class="events__item-date">08.11</p>
+                </div>
+              </a>
+              <a href="/event.html" class="events__item">
+                <div class="events__item-img">
+                  <img src="/images/default.jpeg" alt="events__item-img" />
+                </div>
+                <div class="events__item-info">
+                  <p class="events__item-title">Event title</p>
+                  <p class="events__item-date">08.11</p>
+                </div>
+              </a>
+              <a href="/event.html" class="events__item">
+                <div class="events__item-img">
+                  <img src="/images/default.jpeg" alt="events__item-img" />
+                </div>
+                <div class="events__item-info">
+                  <p class="events__item-title">Event title</p>
+                  <p class="events__item-date">08.11</p>
+                </div>
+              </a>
+              <a href="/event.html" class="events__item">
+                <div class="events__item-img">
+                  <img src="/images/default.jpeg" alt="events__item-img" />
+                </div>
+                <div class="events__item-info">
+                  <p class="events__item-title">Event title</p>
+                  <p class="events__item-date">08.11</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__left">
+            <ul class="footer__navbar">
+              <li class="footer__navbar-item">
+                <a href="#" class="footer__navbar-link">about us</a>
+              </li>
+              <li class="footer__navbar-item">
+                <a href="#" class="footer__navbar-link">events</a>
+              </li>
+              <li class="footer__navbar-item">
+                <a href="#" class="footer__navbar-link">team</a>
+              </li>
+            </ul>
+            <ul class="footer__navbar">
+              <li class="footer__navbar-item">
+                <a href="#" class="footer__navbar-link">projects</a>
+              </li>
+              <li class="footer__navbar-item">
+                <a href="#" class="footer__navbar-link">contact us</a>
+              </li>
+              <li class="footer__navbar-item">
+                <a href="#" class="footer__navbar-link">privicy policy</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__middle">
+            <ul class="footer__icons">
+              <li class="footer__icon">
+                <a class="footer__icon-link" href="">
+                  <img
+                    class="footer__icon-img"
+                    src="images/face-footer.png"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li class="footer__icon">
+                <a class="footer__icon-link" href="">
+                  <img
+                    class="footer__icon-img"
+                    src="images/inst-footer.png"
+                    alt=""
+                  />
+                </a>
+              </li>
+              <li class="footer__icon">
+                <a class="footer__icon-link" href="">
+                  <img
+                    class="footer__icon-img"
+                    src="images/vk-footer.png"
+                    alt=""
+                  />
+                </a>
+              </li>
+            </ul>
+            <div class="footer__copy">© 2021 Youth Included.</div>
+          </div>
+          <div class="footer__right">
+            <a href="#" class="footer__logo">
+              <img src="images/logo.png" alt="footer__logo" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
