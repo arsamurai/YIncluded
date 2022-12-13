@@ -82,6 +82,9 @@
   }
 
   @media screen and (max-width: 576px) {
+		.container {
+			padding: 0;
+		}
     &__top {
       display: flex;
       flex-direction: column;
@@ -98,6 +101,7 @@
       margin-bottom: 25px;
       font-size: 15px;
       line-height: 15px;
+			padding: 0 20px;
     }
     &__item {
       &-preview {
@@ -118,6 +122,7 @@
         width: 109px;
       }
       &-text {
+				padding: 0 20px;
         font-size: 13px;
         line-height: 160%;
       }

@@ -2726,6 +2726,9 @@ meter {
   }
 }
 @media screen and (max-width: 576px) {
+  .projects .container {
+    padding: 0;
+  }
   .projects__top {
     display: flex;
     flex-direction: column;
@@ -2742,6 +2745,7 @@ meter {
     margin-bottom: 25px;
     font-size: 15px;
     line-height: 15px;
+    padding: 0 20px;
   }
   .projects__item-preview {
     height: 138px;
@@ -2761,6 +2765,7 @@ meter {
     width: 109px;
   }
   .projects__item-text {
+    padding: 0 20px;
     font-size: 13px;
     line-height: 160%;
   }
