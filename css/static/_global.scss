@@ -73,6 +73,29 @@ img {
 	&.events-title {
 		padding: 38px 0 28px;
 	}
+	&.projects-title {
+		padding: 31px 0 27px;
+	}
+}
+
+.long-string {
+	font-family: "ObjectSans-Heavy";
+	font-size: 40px;
+	line-height: 160%;
+	white-space: nowrap;
+	span:not(:first-child) {
+		display: inline-block;
+	}
+	
+	@media screen and (max-width: 576px) {
+		font-family: "ObjectSans-Regular";
+		font-size: 36px;
+		line-height: 37px;
+		text-align: center;
+		span:not(:first-child) {
+			display: none;
+		}
+	}
 }
 
 .title {

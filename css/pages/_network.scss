@@ -1,0 +1,457 @@
+#network {
+  padding: 69px 0 23px;
+
+  .container {
+    max-width: 1364px;
+  }
+
+  .network__main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 68px;
+    &-img {
+      width: 50vw;
+      height: 337px;
+      img {
+        max-width: 100%;
+        height: 100%;
+      }
+    }
+    &-wrapper {
+      width: 50vw;
+    }
+    &-info {
+      max-width: 682px;
+      width: 100%;
+    }
+    &-inner {
+      margin-left: auto;
+      max-width: 471px;
+      padding-right: 20px;
+      width: 100%;
+      height: 100%;
+      text-align: right;
+      padding-left: 72px;
+    }
+    &-title {
+      font-weight: 400;
+      font-size: 80px;
+      line-height: 82px;
+      margin-bottom: 50px;
+      text-transform: lowercase;
+      span:not(:first-child) {
+        display: none;
+      }
+    }
+    &-text {
+      font-size: 20px;
+      line-height: 20px;
+    }
+  }
+
+  .network__team {
+    position: relative;
+    .long-string {
+      margin-bottom: 34px;
+      text-transform: uppercase;
+      margin-left: -23px;
+    }
+    .network__team-slider {
+      display: flex;
+      justify-content: space-between;
+    }
+    .team__item {
+      width: 310px;
+      height: 383px;
+      margin: 0 14px;
+      position: relative;
+      &-img {
+        height: 100%;
+      }
+      &-info {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 998;
+        width: 100%;
+        background-color: rgba($black, 0.5);
+        padding: 25px 12px;
+      }
+      &-name,
+      &-spec {
+        font-size: 32px;
+        line-height: 100%;
+        color: $white;
+        text-transform: lowercase;
+      }
+      &-name {
+        font-family: "ObjectSans-Heavy";
+        font-size: 32px;
+        line-height: 100%;
+      }
+    }
+    .slick-list,
+    .slick-slide,
+    .slick-track {
+      height: 383px;
+    }
+    .slick-slide {
+      position: relative;
+    }
+    .slick-prev {
+      left: -56px;
+    }
+    .slick-next {
+      right: -56px;
+    }
+    .border__bottom {
+      margin-top: 73px;
+      height: 11px;
+      width: 100%;
+      background-color: $black;
+    }
+  }
+
+  .network__lecturers {
+    padding-top: 17px;
+    .long-string {
+      margin-bottom: 34px;
+      text-transform: lowercase;
+      margin-left: -131px;
+    }
+    &-items {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .lecturers__item {
+      width: 310px;
+      height: 383px;
+      margin-right: 28px;
+      position: relative;
+      margin-bottom: 73px;
+      justify-self: center;
+      &-img {
+        height: 100%;
+      }
+      &-info {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 998;
+        width: 100%;
+        background-color: rgba($black, 0.5);
+        padding: 25px 12px;
+      }
+      &-name,
+      &-spec {
+        font-size: 32px;
+        line-height: 100%;
+        color: $white;
+        text-transform: lowercase;
+      }
+      &-name {
+        font-family: "ObjectSans-Heavy";
+        font-size: 32px;
+        line-height: 100%;
+      }
+    }
+  }
+
+  .network__person {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba($black, 0.5);
+    @include flex(center, center);
+    z-index: 1005;
+    opacity: 0;
+    pointer-events: none;
+    overflow: hidden;
+    transition: all linear 0.3s;
+    padding: 20px;
+    &-inner {
+      background-color: $white;
+      max-width: 1079px;
+      width: 100%;
+      height: 1020px;
+      overflow-y: auto;
+      padding: 56px 43px 62px;
+      margin: auto;
+    }
+    &-main {
+      height: 696px;
+      margin-bottom: 61px;
+      display: flex;
+    }
+    &-img {
+      max-width: 462px;
+      height: 100%;
+    }
+    &-info {
+      padding-left: 33px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    &-name {
+      font-family: "ObjectSans-Heavy";
+      font-size: 40px;
+      line-height: 160%;
+      margin-bottom: 10px;
+    }
+    &-spec,
+    &-country {
+      font-size: 36px;
+      line-height: 160%;
+    }
+    &-text {
+      font-size: 24px;
+      line-height: 160%;
+    }
+    &-number {
+      margin-bottom: 17px;
+      font-size: 24px;
+      line-height: 160%;
+      span {
+        color: #727272;
+      }
+      a {
+        display: block;
+      }
+    }
+    &-mail {
+      font-size: 24px;
+      line-height: 160%;
+      span {
+        color: #727272;
+      }
+      a {
+        display: block;
+      }
+    }
+    &-social {
+      @include flex(space-between, center);
+    }
+    .social-item {
+      max-width: 462px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      padding: 18px 27px;
+      background-color: $black;
+      color: $white;
+      &__img {
+        width: 116px;
+        height: 107px;
+      }
+      &__text {
+        padding-left: 25px;
+        font-size: 36px;
+        line-height: 37px;
+      }
+    }
+
+    &.active {
+      opacity: 1;
+      pointer-events: all;
+      overflow: visible;
+      overflow-y: auto;
+    }
+  }
+
+  @media screen and (max-width: 1440px) {
+    .network__team {
+      .network__team-slider {
+        width: 100%;
+      }
+      .slick-prev {
+        left: 17px;
+      }
+      .slick-next {
+        right: 17px;
+      }
+    }
+    .network__lecturers {
+      &-items {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+      }
+      .lecturers__item {
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 23px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1060px) {
+    .network__person {
+      &-info {
+        padding-left: 23px;
+      }
+      .social-item {
+        max-width: 424px;
+        &__text {
+          font-size: 33px;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .network__main {
+      &-inner {
+        padding-left: 62px;
+      }
+      &-title {
+        font-size: 55px;
+        line-height: 62px;
+        margin-bottom: 40px;
+      }
+    }
+    .network__person {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .network__main {
+      &-inner {
+        padding-left: 42px;
+      }
+      &-title {
+        font-size: 50px;
+        line-height: 52px;
+        margin-bottom: 40px;
+      }
+    }
+    .network__team {
+      .network__team-slider {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+      }
+      .team__item {
+        width: 100%;
+        margin-bottom: 23px;
+        justify-self: center;
+      }
+    }
+  }
+  @media screen and (max-width: 676px) {
+    .network__lecturers .lecturers__item {
+      height: 301px;
+      &-info {
+        background-color: rgba($black, 1);
+        padding: 12px;
+      }
+      &-name {
+        font-size: 23px;
+        line-height: 23px;
+      }
+      &-spec {
+        font-size: 23px;
+        line-height: 23px;
+      }
+    }
+    .network__team .team__item {
+      height: 301px;
+      &-info {
+        background-color: rgba($black, 1);
+        padding: 12px;
+      }
+      &-name {
+        font-size: 23px;
+        line-height: 23px;
+      }
+      &-spec {
+        font-size: 23px;
+        line-height: 23px;
+      }
+    }
+  }
+  @media screen and (max-width: 576px) {
+    .network__main {
+      margin-bottom: 28px;
+      &-inner {
+        margin-left: auto;
+        max-width: 100%;
+        text-align: left;
+        padding-right: 0;
+        padding-left: 0;
+      }
+      &-wrapper {
+        width: 100%;
+      }
+      &-title {
+        font-size: 40px;
+        line-height: 41px;
+        margin-bottom: 10px;
+        margin-left: -18px;
+        white-space: nowrap;
+        span:not(:first-child) {
+          display: inline-block;
+        }
+      }
+      &-text {
+        padding: 0 20px;
+      }
+      &-img {
+        display: none;
+      }
+    }
+    .network__team {
+      .long-string {
+        margin-left: 0;
+        text-transform: lowercase;
+        margin-bottom: 0;
+      }
+      .border__bottom {
+        display: none;
+      }
+    }
+    .network__lecturers {
+      padding-top: 35px;
+      .long-string {
+        margin-left: 0;
+        margin-bottom: 30px;
+      }
+      &-items {
+        gap: 17px;
+      }
+      .lecturers__item {
+        height: 201px;
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: 16px;
+        &-name {
+          font-size: 13px;
+          line-height: 13px;
+        }
+        &-spec {
+          font-size: 11px;
+          line-height: 11px;
+        }
+      }
+    }
+    .network__team {
+      .network__team-slider {
+        gap: 17px;
+      }
+      .team__item {
+        height: 201px;
+        width: 100%;
+        margin-bottom: 16px;
+        &-name {
+          font-size: 13px;
+          line-height: 13px;
+        }
+        &-spec {
+          font-size: 11px;
+          line-height: 11px;
+        }
+      }
+    }
+  }
+}

@@ -6,14 +6,10 @@ $(document).ready(function () {
     let filterValue = $(this).attr("data-filter-value");
 
     if ($(this).is(":checked")) {
-      // filters[filterName] = filterValue
       $("a[data-filter-" + filterName + '="' + filterValue + '"]')
-        .parent()
-        .css("display", "grid");
+        .css("display", "block");
     } else {
-      // delete filters[filterName]
       $("a[data-filter-" + filterName + '="' + filterValue + '"]')
-        .parent()
         .css("display", "none");
     }
   });
