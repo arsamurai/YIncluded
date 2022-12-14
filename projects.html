@@ -20,6 +20,7 @@
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script src="/js/app.js"></script>
+    <script src="/js/projects-filter.js"></script>
     <title>YI</title>
   </head>
   <body>
@@ -36,10 +37,10 @@
           <a href="#" class="sidebar-link">gallery</a>
         </li>
         <li class="sidebar-item">
-          <a href="/projects.html" class="sidebar-link">projects</a>
+          <a href="/events.html" class="sidebar-link">events</a>
         </li>
         <li class="sidebar-item">
-          <a href="#" class="sidebar-link">projects</a>
+          <a href="/projects.html" class="sidebar-link">projects</a>
         </li>
         <li class="sidebar-item">
           <a href="/network.html" class="sidebar-link">team</a>
@@ -62,6 +63,56 @@
 
     <!-- Main -->
     <main id="projects" class="projects">
+			<div class="projects__filter filter">
+				<div class="projects__filter-close filter-close" id="filter-close"><span></span><span></span></div>
+				<ul class="projects__filter-list">
+					<li class="projects__filter-item active">
+						<a class="projects__filter-link" href="/">
+							<input
+								class="filterCheckBox"
+								data-filter-name="project-id"
+								data-filter-value="1"
+								type="checkbox"
+								id="project_1"
+								checked
+							/>
+							<label for="project_1" class="checkboxes all"
+								>all projects menu</label
+							>
+						</a>
+					</li>
+					<li class="projects__filter-item">
+						<a class="projects__filter-link" href="/">
+							<input
+								class="filterCheckBox"
+								data-filter-name="project-id"
+								data-filter-value="2"
+								type="checkbox"
+								id="project_2"
+								checked
+							/>
+							<label for="project_2" class="checkboxes"
+								>IN-CREATE</label
+							>
+						</a>
+					</li>
+					<li class="projects__filter-item">
+						<a class="projects__filter-link" href="/">
+							<input
+								class="filterCheckBox"
+								data-filter-name="project-id"
+								data-filter-value="3"
+								type="checkbox"
+								id="project_3"
+								checked
+							/>
+							<label for="project_3" class="checkboxes"
+								>Club for Loving Mothers</label
+							>
+						</a>
+					</li>
+				</ul>
+			</div>
       <div class="container-big">
         <div class="projects__top">
           <img
@@ -88,7 +139,7 @@
       <div class="projects__inner">
         <div class="container">
           <div class="projects__items">
-            <div class="projects__item">
+            <div class="projects__item" data-filter-project-id="2">
               <div href="" class="projects__item-preview">
                 <div class="projects__item-img">
                   <img src="/images/default.jpeg" alt="projects__item-img" />
@@ -110,11 +161,11 @@
                   ut aliquip ex ea commodo consequat.
                 </p>
                 <div class="projects__item-btn btn">
-                  <a href="#">open the project page</a>
+                  <a href="/project.html">open the project page</a>
                 </div>
               </div>
             </div>
-            <div class="projects__item">
+            <div class="projects__item" data-filter-project-id="2">
               <div href="" class="projects__item-preview">
                 <div class="projects__item-img">
                   <img src="/images/default.jpeg" alt="projects__item-img" />
@@ -136,11 +187,11 @@
                   ut aliquip ex ea commodo consequat.
                 </p>
                 <div class="projects__item-btn btn">
-                  <a href="#">open the project page</a>
+                  <a href="/project.html">open the project page</a>
                 </div>
               </div>
             </div>
-            <div class="projects__item">
+            <div class="projects__item" data-filter-project-id="3">
               <div href="" class="projects__item-preview">
                 <div class="projects__item-img">
                   <img src="/images/default.jpeg" alt="projects__item-img" />
@@ -162,7 +213,7 @@
                   ut aliquip ex ea commodo consequat.
                 </p>
                 <div class="projects__item-btn btn">
-                  <a href="#">open the project page</a>
+                  <a href="/project.html">open the project page</a>
                 </div>
               </div>
             </div>

@@ -1,6 +1,4 @@
 $(document).ready(function () {
-  let filters = {};
-
   $(".filterCheckBox").on("change", function () {
     let filterName = $(this).attr("data-filter-name");
     let filterValue = $(this).attr("data-filter-value");

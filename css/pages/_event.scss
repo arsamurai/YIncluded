@@ -5,6 +5,18 @@
     max-width: 1335px;
   }
 
+	.event__mobile-btn {
+		display: none;
+		margin-bottom: 31px;
+		.btn a {
+			max-width: 335px;
+			height: auto;
+			font-size: 20px;
+			line-height: 20px;
+			text-align: center;
+		}
+	}
+
   .event__main {
     display: flex;
     &-img {
@@ -383,6 +395,9 @@
 		.event__item-info {
 			display: none;
 		}
+		.event__more {
+			padding: 16px 0 22px;
+		}
 		.event__more-title {
 			order: 1;
 			font-size: 24px;
@@ -413,6 +428,9 @@
 		.event__more .container {
 			padding-left: 0;
 		}
+		.event__mobile-btn {
+			display: block;
+		}
   }
 
 	@media screen and (max-width: 412px) {
@@ -420,6 +438,7 @@
 			right: -32%;
 		}
 	}
+
 	@media screen and (max-width: 375px) {
 		.event__more-title {
 			right: -38%;

@@ -1,9 +1,12 @@
 $(document).ready(function () {
+
+	// Burger
   $("#burger").on("click", function () {
     $("#sidebar").toggleClass("active");
     $(this).toggleClass("active");
   });
 
+	// Filter
   $("#filter-btn").on("click", function () {
     $(".filter").addClass("active");
   });
@@ -12,6 +15,13 @@ $(document).ready(function () {
     $(".filter").removeClass("active");
   });
 
+	$('.projects__filter-item').on("click", function() {
+		$('.projects__filter-item').removeClass("active");
+		$(this).addClass("active");
+	});
+
+
+	// Tabs
   $(".tabs__item").on("click", function (e) {
     e.preventDefault();
 
@@ -22,6 +32,7 @@ $(document).ready(function () {
     $($(this).attr("href")).addClass("tabs__block-active");
   });
 
+	// Slider
   $("#gallery__slider").slick({ infinite: false });
   $("#events__slider").slick({ infinite: false });
   $("#network__team-slider").slick({
