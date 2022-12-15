@@ -9,7 +9,7 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -19,19 +19,19 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-    <script src="/js/app.js"></script>
+    <script src="/assets/js/app.js"></script>
     <title>YI</title>
   </head>
   <body>
 
 		<!-- Header -->
-		<header class="header event-header">
+		<header class="header">
 			<ul class="sidebar" id="sidebar">
 				<li class="sidebar-item">
 					<a href="/about.html" class="sidebar-link">about us</a>
 				</li>
 				<li class="sidebar-item">
-					<a href="#" class="sidebar-link">gallery</a>
+					<a href="/gallery.html" class="sidebar-link">gallery</a>
 				</li>
 				<li class="sidebar-item">
 					<a href="/events.html" class="sidebar-link">events</a>
@@ -43,7 +43,7 @@
 					<a href="/network.html" class="sidebar-link">team</a>
 				</li>
 				<li class="sidebar-item">
-					<a href="#" class="sidebar-link">contact us</a>
+					<div class="sidebar-link" id="contact-us-link">contact us</div>
 				</li>
 			</ul>
 			<div class="burger" id="burger">
@@ -51,17 +51,84 @@
 					<span></span><span></span><span></span>
 				</div>
 			</div>
-			<h3 class="event__subtitle">
-				project
-			</h3>
+			<div class="contact-us" id="contact-us">
+        <form action="" class="contact-us__form">
+					<div class="form__nav">
+						<div class="form__nav-back">
+							<img src="/assets/images/back.png" alt="back-arrow" />
+						</div>
+					</div>
+          <div class="form__info">
+            <h3 class="form__info-title">Get in Touch!</h3>
+            <p class="form__info-text">
+              <span>Do you want to be a part of «Youth Included»?</span>
+              <span>Or just have a question? Write us!</span>
+            </p>
+          </div>
+          <div class="form__field">
+            <label for="name">write your name:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Johnny Silverhand"
+            />
+          </div>
+          <div class="form__field mobile-field">
+            <label for="phone">your e-mail or phone number:</label>
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              placeholder="+420 000 000 000..."
+            />
+          </div>
+          <div class="form__field mobile-field">
+            <label for="subject">subject of the message:</label>
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="I have a great idea!"
+            />
+          </div>
+          <div class="form__field desktop-field">
+            <label for="link">a link to connect with you:</label>
+            <input type="text" name="link" id="link" placeholder="http://" />
+          </div>
+          <div class="form__field last-field">
+            <label for="message">message:</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Johnny Silverhand asks about..."
+            ></textarea>
+          </div>
+          <button class="form__btn" type="submit">Send</button>
+        </form>
+      </div>
+			<div class="success popup" id="success">
+        <div class="popup__inner">
+					<p>Message successfuly sent</p>
+					<p>We will contact you within 48 hours</p>
+				</div>
+      </div>
+      <div class="error popup" id="error">
+        <div class="popup__inner">
+					<p>Something went wrong</p>
+					<p>We are already fixing this problem. Try again later.</p>
+				</div>
+      </div>
 		</header>
 
 		<!-- Main -->
     <main id="event">
-
+			<h3 class="event__subtitle">
+				project
+			</h3>
       <div class="event__main">
         <div class="event__main-img">
-          <img src="/images/default.jpeg" alt="event-img" />
+          <img src="/assets/images/default.jpeg" alt="event-img" />
         </div>
         <div class="event__main-info">
           <div class="event__main-inner">
@@ -69,11 +136,11 @@
 							<div class="event__main-title">Title</div>
             	<div class="event__main-date">
 								<div class="date__block-1">
-									<img src="/images/date.png" alt="date">
+									<img src="/assets/images/date.png" alt="date">
 							 		<p>20.12.2002</p>
 								</div>
 								<div class="date__block-2 event__main-time">
-									<img src="/images/clock.png" alt="clock">
+									<img src="/assets/images/clock.png" alt="clock">
 									<p>10:00</p>
 								</div>
 							</div>
@@ -82,11 +149,11 @@
               <div class="event__main-subtitle">project name</div>
               <div class="event__main-special__text">
 								<div class="event__main-time event__main-time--special">
-									<img src="/images/clock.png" alt="clock">
+									<img src="/assets/images/clock.png" alt="clock">
 									<p>10:00</p>
 								</div>
 								<div class="event__main-location">
-									<img src="/images/location.png" alt="clock">
+									<img src="/assets/images/location.png" alt="clock">
 									<p>Prague, Dejvice Kavarna Browdqwd</p>
 								</div>
 							</div>
@@ -178,7 +245,7 @@
         	<div class="event__items">
           <a href="/event.html" class="event__item">
             <div class="event__item-img">
-              <img src="/images/default.jpeg" alt="event__item-img" />
+              <img src="/assets/images/default.jpeg" alt="event__item-img" />
             </div>
             <div class="event__item-info">
               <p class="event__item-title">Event title</p>
@@ -187,7 +254,7 @@
           </a>
           <a href="/event.html" class="event__item">
             <div class="event__item-img">
-              <img src="/images/default.jpeg" alt="event__item-img" />
+              <img src="/assets/images/default.jpeg" alt="event__item-img" />
             </div>
             <div class="event__item-info">
               <p class="event__item-title">Event title</p>
@@ -196,7 +263,7 @@
           </a>
           <a href="/event.html" class="event__item">
             <div class="event__item-img">
-              <img src="/images/default.jpeg" alt="event__item-img" />
+              <img src="/assets/images/default.jpeg" alt="event__item-img" />
             </div>
             <div class="event__item-info">
               <p class="event__item-title">Event title</p>
@@ -205,7 +272,7 @@
           </a>
           <a href="/event.html" class="event__item">
             <div class="event__item-img">
-              <img src="/images/default.jpeg" alt="event__item-img" />
+              <img src="/assets/images/default.jpeg" alt="event__item-img" />
             </div>
             <div class="event__item-info">
               <p class="event__item-title">Event title</p>
@@ -214,7 +281,7 @@
           </a>
           <a href="/event.html" class="event__item">
             <div class="event__item-img">
-              <img src="/images/default.jpeg" alt="event__item-img" />
+              <img src="/assets/images/default.jpeg" alt="event__item-img" />
             </div>
             <div class="event__item-info">
               <p class="event__item-title">Event title</p>
@@ -223,7 +290,7 @@
           </a>
           <a href="/event.html" class="event__item">
             <div class="event__item-img">
-              <img src="/images/default.jpeg" alt="event__item-img" />
+              <img src="/assets/images/default.jpeg" alt="event__item-img" />
             </div>
             <div class="event__item-info">
               <p class="event__item-title">Event title</p>
@@ -232,7 +299,7 @@
           </a>
 					<div class="event__item">
             <div class="event__item-img">
-              <img src="/images/default.jpeg" alt="event__item-img" />
+              <img src="/assets/images/default.jpeg" alt="event__item-img" />
             </div>
             <div class="event__item-info">
               <p class="event__item-title">Event title</p>
@@ -241,7 +308,7 @@
           </div>
 					<div class="event__item">
             <div class="event__item-img">
-              <img src="/images/default.jpeg" alt="event__item-img" />
+              <img src="/assets/images/default.jpeg" alt="event__item-img" />
             </div>
             <div class="event__item-info">
               <p class="event__item-title">Event title</p>
@@ -267,21 +334,21 @@
           <div class="footer__left">
             <ul class="footer__navbar">
               <li class="footer__navbar-item">
-                <a href="#" class="footer__navbar-link">about us</a>
+                <a href="/about.html" class="footer__navbar-link">about us</a>
               </li>
               <li class="footer__navbar-item">
-                <a href="#" class="footer__navbar-link">event</a>
+                <a href="/events.html" class="footer__navbar-link">events</a>
               </li>
               <li class="footer__navbar-item">
-                <a href="#" class="footer__navbar-link">team</a>
+                <a href="/network.html" class="footer__navbar-link">team</a>
               </li>
             </ul>
             <ul class="footer__navbar">
               <li class="footer__navbar-item">
-                <a href="#" class="footer__navbar-link">projects</a>
+                <a href="/projects.html" class="footer__navbar-link">projects</a>
               </li>
               <li class="footer__navbar-item">
-                <a href="#" class="footer__navbar-link">contact us</a>
+                <div class="footer__navbar-link" id="contact-us-link">contact us</div>
               </li>
               <li class="footer__navbar-item">
                 <a href="#" class="footer__navbar-link">privicy policy</a>
@@ -291,29 +358,29 @@
           <div class="footer__middle">
             <ul class="footer__icons">
               <li class="footer__icon">
-                <a class="footer__icon-link" href="">
+                <a class="footer__icon-link" href="#">
                   <img
                     class="footer__icon-img"
-                    src="images/face-footer.png"
-                    alt=""
+                    src="/assets/images/face-footer.png"
+                    alt="facebook"
                   />
                 </a>
               </li>
               <li class="footer__icon">
-                <a class="footer__icon-link" href="">
+                <a class="/assets/footer__icon-link" href="#">
                   <img
                     class="footer__icon-img"
-                    src="images/inst-footer.png"
-                    alt=""
+                    src="/assets/images/inst-footer.png"
+                    alt="instagram"
                   />
                 </a>
               </li>
               <li class="footer__icon">
-                <a class="footer__icon-link" href="">
+                <a class="footer__icon-link" href="#">
                   <img
                     class="footer__icon-img"
-                    src="images/vk-footer.png"
-                    alt=""
+                    src="/assets/images/vk-footer.png"
+                    alt="vk"
                   />
                 </a>
               </li>
@@ -321,8 +388,8 @@
             <div class="footer__copy">© 2021 Youth Included.</div>
           </div>
           <div class="footer__right">
-            <a href="#" class="footer__logo">
-              <img src="images/logo.png" alt="footer__logo" />
+            <a href="/index.html" class="footer__logo">
+              <img src="/assets/images/logo.png" alt="footer__logo" />
             </a>
           </div>
         </div>

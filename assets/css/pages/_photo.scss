@@ -1,0 +1,74 @@
+.photo-page {
+  .container {
+    max-width: 1402px;
+  }
+  &-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 21px 20px;
+    .back-arrow {
+      width: 16px;
+      height: 12px;
+    }
+    .upload-arrow {
+      width: 24px;
+      height: 24px;
+    }
+  }
+  &-main {
+    &__img {
+      height: 570px;
+      max-width: 100%;
+    }
+  }
+  &-info {
+    padding: 40px 0;
+    &__title {
+      font-size: 48px;
+      line-height: 49px;
+      margin-bottom: 15px;
+    }
+    &__text {
+      font-size: 36px;
+      line-height: 37px;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+		&-main {
+      &__img {
+        height: 350px;
+      }
+    }
+    &-info {
+      padding: 30px 0;
+      &__title {
+        font-size: 30px;
+      }
+      &__text {
+        font-size: 23px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 576px) {
+    &-main {
+      &__img {
+        height: 179px;
+      }
+    }
+    &-info {
+      padding: 12px 0 25px;
+      &__title {
+        font-family: "ObjectSans-Heavy";
+        font-size: 14px;
+        line-height: 15px;
+        margin-bottom: 10px;
+      }
+      &__text {
+        font-size: 13px;
+        line-height: 13px;
+      }
+    }
+  }
+}

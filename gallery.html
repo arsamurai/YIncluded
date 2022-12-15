@@ -20,9 +20,11 @@
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script src="/assets/js/app.js"></script>
-    <title>UI | About us</title>
+    <script src="/assets/js/gallery-filter.js"></script>
+    <title>YI</title>
   </head>
   <body>
+
     <!-- Header -->
     <header class="header">
       <ul class="sidebar" id="sidebar">
@@ -30,7 +32,7 @@
           <a href="/about.html" class="sidebar-link">about us</a>
         </li>
         <li class="sidebar-item">
-          <a href="#" class="sidebar-link">gallery</a>
+          <a href="/gallery.html" class="sidebar-link">gallery</a>
         </li>
         <li class="sidebar-item">
           <a href="/events.html" class="sidebar-link">events</a>
@@ -42,19 +44,19 @@
           <a href="/network.html" class="sidebar-link">team</a>
         </li>
         <li class="sidebar-item">
-          <div class="sidebar-link" id="contact-us-link">contact us</div>
+					<div class="sidebar-link" id="contact-us-link">contact us</div>
         </li>
       </ul>
       <div class="burger" id="burger">
         <div class="burger__menu"><span></span><span></span><span></span></div>
       </div>
-      <div class="contact-us" id="contact-us">
+			<div class="contact-us" id="contact-us">
         <form action="" class="contact-us__form">
-          <div class="form__nav">
-            <div class="form__nav-back">
-              <img src="/assets/images/back.png" alt="back-arrow" />
-            </div>
-          </div>
+					<div class="form__nav">
+						<div class="form__nav-back">
+							<img src="/assets/images/back.png" alt="back-arrow" />
+						</div>
+					</div>
           <div class="form__info">
             <h3 class="form__info-title">Get in Touch!</h3>
             <p class="form__info-text">
@@ -104,7 +106,7 @@
           <button class="form__btn" type="submit">Send</button>
         </form>
       </div>
-      <div class="success popup" id="success">
+			<div class="success popup" id="success">
         <div class="popup__inner">
 					<p>Message successfuly sent</p>
 					<p>We will contact you within 48 hours</p>
@@ -119,105 +121,139 @@
     </header>
 
     <!-- Main -->
-    <main id="about">
-			<div class="about-title__wrapper">
-				<div class="container">
-					<h1 class="about-title page-title">about us</h1>
-				</div>
-			</div>
-      <div
-        class="gallery container-big"
-        style="background-image: url(/assets/images/default.jpeg)"
-      >
-        <div class="gallery__btn btn">
-          <a href="/gallery.html">our team in gallery</a>
-        </div>
+    <main id="gallery-page" class="gallery-page">
+			<div class="filter-btn" id="filter-btn">
+        <img
+          class="filter-btn__img"
+          src="/assets/images/filter.png"
+          alt="filter-close"
+        />
       </div>
-      <div class="info">
-        <div class="container">
-          <div class="info__inner">
-            <div class="team">
-              <div class="team__info">
-                <img
-                  src="/assets/images/default.jpeg"
-                  alt="team-img"
-                  class="team__img"
-                />
-                <div class="team__main">
-                  <h5 class="team__main-title">president of the company</h5>
-                  <p class="team__main-text">
-                    almost heaven, west virginia, blue ridge mountains,
-                    shenandoah river, life is old there, older than the trees,
-                    younger than the mountains growing like a breath, take me
-                  </p>
-                </div>
-              </div>
-              <div class="team__btn btn">
-                <a href="/network.html"
-                  >click here to see all members of the team</a
-                >
-              </div>
-            </div>
-            <div class="tabs">
-              <nav class="tabs__items">
-                <a href="#tab-1" class="tabs__item tabs__item-active"
-                  >mission</a
-                >
-                <a href="#tab-2" class="tabs__item">story</a>
-                <a href="#tab-3" class="tabs__item">areas</a>
-              </nav>
-              <div class="tabs__body">
-                <div id="tab-1" class="tabs__block tabs__block-active">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-                  dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                  minim veniam, quis nostrud exercitation ullamco laboris nisi
-                  ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                  ea commodo consequat.
-                </div>
-                <div id="tab-2" class="tabs__block">
-                  Ipsum lorem dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-                  dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                  minim veniam, quis nostrud exercitation ullamco laboris nisi
-                  ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                  ea commodo consequat.
-                </div>
-                <div id="tab-3" class="tabs__block">
-                  Sit amet lorem ipsum dolor, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-                  dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                  minim veniam, quis nostrud exercitation ullamco laboris nisi
-                  ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                  ea commodo consequat.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+			<div class="spec__filter">
+				<div class="spec__filter-close filter-close" id="filter-close"><span></span><span></span></div>
+				<ul class="spec__filter-list">
+					<li class="spec__filter-item active">
+						<a class="spec__filter-link" href="/">
+							<input
+								class="filterCheckBox"
+								data-filter-name="project-id"
+								data-filter-value="1"
+								type="checkbox"
+								id="project_1"
+								checked
+							/>
+							<label for="project_1" class="checkboxes all"
+								>all albums menu</label
+							>
+						</a>
+					</li>
+					<li class="spec__filter-item">
+						<a class="spec__filter-link" href="/">
+							<input
+								class="filterCheckBox"
+								data-filter-name="project-id"
+								data-filter-value="2"
+								type="checkbox"
+								id="project_2"
+								checked
+							/>
+							<label for="project_2" class="checkboxes"
+								>IN-CREATE</label
+							>
+						</a>
+					</li>
+					<li class="spec__filter-item">
+						<a class="spec__filter-link" href="/">
+							<input
+								class="filterCheckBox"
+								data-filter-name="project-id"
+								data-filter-value="3"
+								type="checkbox"
+								id="project_3"
+								checked
+							/>
+							<label for="project_3" class="checkboxes"
+								>Club for Loving Mothers</label
+							>
+						</a>
+					</li>
+				</ul>
+			</div>
+      <div class="container-big">
+					<h3 class="gallery-page__title">gallery</h3>
+					<div class="gallery-page__slider" id="gallery-page__slider">
+						<div class="gallery-page__slider-item">
+							<img src="/assets/images/default.jpeg" alt="gallery-page-img">
+							<p>album title</p>
+						</div>
+						<div class="gallery-page__slider-item">
+							<img src="/assets/images/default.jpeg" alt="gallery-page-img">
+							<p>album title</p>
+						</div>
+						<div class="gallery-page__slider-item">
+							<img src="/assets/images/default.jpeg" alt="gallery-page-img">
+							<p>album title</p>
+						</div>
+					</div>
+					<div class="gallery-page__main">
+						<div class="container">
+							<div class="gallery-page__albums">
+								<a href="/album.html" class="gallery-page__album" data-filter-project-id="2">
+									<div class="gallery-page__album-img">
+										<img src="/assets/images/default.jpeg" alt="gallery-page__album-img" />
+									</div>
+									<p class="gallery-page__album-info">album title</p>
+								</a>
+								<a href="/album.html" class="gallery-page__album" data-filter-project-id="2">
+									<div class="gallery-page__album-img">
+										<img src="/assets/images/default.jpeg" alt="gallery-page__album-img" />
+									</div>
+									<p class="gallery-page__album-info">album title</p>
+								</a>
+								<a href="/album.html" class="gallery-page__album" data-filter-project-id="3">
+									<div class="gallery-page__album-img">
+										<img src="/assets/images/default.jpeg" alt="gallery-page__album-img" />
+									</div>
+									<p class="gallery-page__album-info">album title</p>
+								</a>
+								<a href="/album.html" class="gallery-page__album" data-filter-project-id="3">
+									<div class="gallery-page__album-img">
+										<img src="/assets/images/default.jpeg" alt="gallery-page__album-img" />
+									</div>
+									<p class="gallery-page__album-info">album title</p>
+								</a>
+								<a href="/album.html" class="gallery-page__album" data-filter-project-id="3">
+									<div class="gallery-page__album-img">
+										<img src="/assets/images/default.jpeg" alt="gallery-page__album-img" />
+									</div>
+									<p class="gallery-page__album-info">album title</p>
+								</a>
+								<a href="/album.html" class="gallery-page__album" data-filter-project-id="2">
+									<div class="gallery-page__album-img">
+										<img src="/assets/images/default.jpeg" alt="gallery-page__album-img" />
+									</div>
+									<p class="gallery-page__album-info">album title</p>
+								</a>
+							</div>
+						</div>
+						<div class="gallery-page__albums-all">
+							<a href="#">click here to see all albums</a>
+						</div>
+					</div>
+					<div class="gallery-page__team">
+						<div class="gallery-page__team-main">
+							<img class="gallery-page__team-img" src="/assets/images/default.jpeg" alt="team">
+							<h5 class="gallery-page__team-title">team photos</h5>
+						</div>
+						<div class="gallery-page__team-btn btn">
+							<a href="#">create a new album</a>
+						</div>
+					</div>
       </div>
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+		<footer class="footer">
       <div class="container">
         <div class="footer__inner">
           <div class="footer__left">
@@ -234,14 +270,10 @@
             </ul>
             <ul class="footer__navbar">
               <li class="footer__navbar-item">
-                <a href="/projects.html" class="footer__navbar-link"
-                  >projects</a
-                >
+                <a href="/projects.html" class="footer__navbar-link">projects</a>
               </li>
               <li class="footer__navbar-item">
-                <div class="footer__navbar-link" id="contact-us-link">
-                  contact us
-                </div>
+                <div class="footer__navbar-link" id="contact-us-link">contact us</div>
               </li>
               <li class="footer__navbar-item">
                 <a href="#" class="footer__navbar-link">privicy policy</a>

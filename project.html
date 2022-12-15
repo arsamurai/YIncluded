@@ -9,7 +9,7 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -19,184 +19,252 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-    <script src="/js/app.js"></script>
+    <script src="/assets/js/app.js"></script>
     <title>YI</title>
   </head>
   <body>
-
-		<!-- Header -->
-		<header class="header project-header">
-			<ul class="sidebar" id="sidebar">
-				<li class="sidebar-item">
-					<a href="/about.html" class="sidebar-link">about us</a>
-				</li>
-				<li class="sidebar-item">
-					<a href="#" class="sidebar-link">gallery</a>
-				</li>
-				<li class="sidebar-item">
-					<a href="/events.html" class="sidebar-link">events</a>
-				</li>
-				<li class="sidebar-item">
-					<a href="/projects.html" class="sidebar-link">projects</a>
-				</li>
-				<li class="sidebar-item">
-					<a href="/network.html" class="sidebar-link">team</a>
-				</li>
-				<li class="sidebar-item">
-					<a href="#" class="sidebar-link">contact us</a>
-				</li>
-			</ul>
-			<div class="burger" id="burger">
-				<div class="burger__menu">
-					<span></span><span></span><span></span>
-				</div>
-			</div>
-			<h5 class="project__subtitles">
-				<span>od 13 july of 2022</span>
-				<span>do 13 july of 2056</span>
-			</h5>
-		</header>
-
-		<!-- Main -->
-    <main id="project" class="project">
-
-			<div class="project__preview">
-				<h3 class="project__preview-title">
-					project title
-				</h3>
-				<div class="project__preview-img">
-					<img src="/images/default.jpeg" alt="project-preview">
-				</div>
-			</div>
-      <div class="project__main">
-        <div class="project__main-img">
-          <img src="/images/default.jpeg" alt="project-img" />
-					<div class="project__btn btn">
-						<a href="#">click here to see the gallery</a>
-					</div>
+    <!-- Header -->
+    <header class="header">
+      <ul class="sidebar" id="sidebar">
+        <li class="sidebar-item">
+          <a href="/about.html" class="sidebar-link">about us</a>
+        </li>
+        <li class="sidebar-item">
+          <a href="/gallery.html" class="sidebar-link">gallery</a>
+        </li>
+        <li class="sidebar-item">
+          <a href="/events.html" class="sidebar-link">events</a>
+        </li>
+        <li class="sidebar-item">
+          <a href="/projects.html" class="sidebar-link">projects</a>
+        </li>
+        <li class="sidebar-item">
+          <a href="/network.html" class="sidebar-link">team</a>
+        </li>
+        <li class="sidebar-item">
+          <div class="sidebar-link" id="contact-us-link">contact us</div>
+        </li>
+      </ul>
+      <div class="burger" id="burger">
+        <div class="burger__menu"><span></span><span></span><span></span></div>
+      </div>
+      <div class="contact-us" id="contact-us">
+        <form action="" class="contact-us__form">
+          <div class="form__nav">
+            <div class="form__nav-back">
+              <img src="/assets/images/back.png" alt="back-arrow" />
+            </div>
+          </div>
+          <div class="form__info">
+            <h3 class="form__info-title">Get in Touch!</h3>
+            <p class="form__info-text">
+              <span>Do you want to be a part of «Youth Included»?</span>
+              <span>Or just have a question? Write us!</span>
+            </p>
+          </div>
+          <div class="form__field">
+            <label for="name">write your name:</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Johnny Silverhand"
+            />
+          </div>
+          <div class="form__field mobile-field">
+            <label for="phone">your e-mail or phone number:</label>
+            <input
+              type="text"
+              name="phone"
+              id="phone"
+              placeholder="+420 000 000 000..."
+            />
+          </div>
+          <div class="form__field mobile-field">
+            <label for="subject">subject of the message:</label>
+            <input
+              type="text"
+              name="subject"
+              id="subject"
+              placeholder="I have a great idea!"
+            />
+          </div>
+          <div class="form__field desktop-field">
+            <label for="link">a link to connect with you:</label>
+            <input type="text" name="link" id="link" placeholder="http://" />
+          </div>
+          <div class="form__field last-field">
+            <label for="message">message:</label>
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Johnny Silverhand asks about..."
+            ></textarea>
+          </div>
+          <button class="form__btn" type="submit">Send</button>
+        </form>
+      </div>
+      <div class="success popup" id="success">
+        <div class="popup__inner">
+          <p>Message successfuly sent</p>
+          <p>We will contact you within 48 hours</p>
         </div>
-        <div class="project__main-info">
-          <div class="project__main-inner">
-						<div class="project__main-block">
-							<div class="project__main-title">project title</div>
-            	<div class="project__main-date">
-								<div class="date__block-1">
-									<span>from</span>
-							 		<p>15.05.1980</p>
-								</div>
-								<div class="date__block-2">
-									<span>till</span>
-									<p>15.05.1980</p>
-								</div>
-							</div>
-						</div>
-            <div class="project__main-text">lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </div>
+      </div>
+      <div class="error popup" id="error">
+        <div class="popup__inner">
+          <p>Something went wrong</p>
+          <p>We are already fixing this problem. Try again later.</p>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main id="project-page" class="project-page">
+      <h5 class="project-page__subtitles">
+        <span>od 13 july of 2022</span>
+        <span>do 13 july of 2056</span>
+      </h5>
+      <div class="project-page__preview">
+        <h3 class="project-page__preview-title">project title</h3>
+        <div class="project-page__preview-img">
+          <img src="/assets/images/default.jpeg" alt="project-page-preview" />
+        </div>
+      </div>
+      <div class="project-page__main">
+        <div class="project-page__main-img">
+          <img src="/assets/images/default.jpeg" alt="project-page-img" />
+          <div class="project-page__btn btn">
+            <a href="/gallery.html">click here to see the gallery</a>
+          </div>
+        </div>
+        <div class="project-page__main-info">
+          <div class="project-page__main-inner">
+            <div class="project-page__main-block">
+              <div class="project-page__main-title">project title</div>
+              <div class="project-page__main-date">
+                <div class="date__block-1">
+                  <span>from</span>
+                  <p>15.05.1980</p>
+                </div>
+                <div class="date__block-2">
+                  <span>till</span>
+                  <p>15.05.1980</p>
+                </div>
+              </div>
+            </div>
+            <div class="project-page__main-text">
+              lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            </div>
           </div>
         </div>
       </div>
-      <div class="project__tabs">
+      <div class="project-page__tabs">
         <div class="container">
-					<div class="tabs">
-						<nav class="tabs__items">
-							<a href="#tab-1" class="tabs__item tabs__item-active">mission</a>
-							<a href="#tab-2" class="tabs__item">for whom</a>
-							<a href="#tab-3" class="tabs__item">support</a>
-							<a href="#tab-3" class="tabs__item">team</a>
-						</nav>
-						<div class="tabs__body">
-							<div id="tab-1" class="tabs__block tabs__block-active">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-								eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-								enim ad minim veniam, quis nostrud exercitation ullamco laboris
-								nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
-								amet, consectetur adipiscing elit, sed do eiusmod tempor
-								incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-								veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-								ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur
-								adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-								dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-								exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat.
-							</div>
-							<div id="tab-1" class="tabs__block">
-								Tempor lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-								eiusmod incididunt ut labore et dolore magna aliqua. Ut
-								enim ad minim veniam, quis nostrud exercitation ullamco laboris
-								nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
-								amet, consectetur adipiscing elit, sed do eiusmod tempor
-								incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-								veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-								ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur
-								adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-								dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-								exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat.
-							</div>
-							<div id="tab-2" class="tabs__block">
-								Ipsum lorem dolor sit amet, consectetur adipiscing elit, sed do
-								eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-								enim ad minim veniam, quis nostrud exercitation ullamco laboris
-								nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
-								amet, consectetur adipiscing elit, sed do eiusmod tempor
-								incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-								veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-								ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur
-								adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-								dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-								exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat.
-							</div>
-							<div id="tab-3" class="tabs__block">
-								Sit amet lorem ipsum dolor, consectetur adipiscing elit, sed do
-								eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-								enim ad minim veniam, quis nostrud exercitation ullamco laboris
-								nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
-								amet, consectetur adipiscing elit, sed do eiusmod tempor
-								incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-								veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-								ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur
-								adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-								dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-								exercitation ullamco laboris nisi ut aliquip ex ea commodo
-								consequat.
-							</div>
-						</div>
-						<div class="tabs__btn btn">
-							<a href="#">click here to register</a>
-						</div>
-					</div>
-				</div>
+          <div class="tabs">
+            <nav class="tabs__items">
+              <a href="#tab-1" class="tabs__item tabs__item-active">mission</a>
+              <a href="#tab-2" class="tabs__item">for whom</a>
+              <a href="#tab-3" class="tabs__item">support</a>
+              <a href="#tab-3" class="tabs__item">team</a>
+            </nav>
+            <div class="tabs__body">
+              <div id="tab-1" class="tabs__block tabs__block-active">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.
+              </div>
+              <div id="tab-1" class="tabs__block">
+                Tempor lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.
+              </div>
+              <div id="tab-2" class="tabs__block">
+                Ipsum lorem dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.
+              </div>
+              <div id="tab-3" class="tabs__block">
+                Sit amet lorem ipsum dolor, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit
+                amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut
+                aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet,
+                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.
+              </div>
+            </div>
+            <div class="tabs__btn btn">
+              <a href="#">click here to register</a>
+            </div>
+          </div>
+        </div>
       </div>
-			<div class="project__mobile-btn">
-				<div class="btn">
-					<a href="/events.html">events of the project</a>
-				</div>
-			</div>
-
+      <div class="project-page__mobile-btn">
+        <div class="btn">
+          <a href="/events.html">events of the project</a>
+        </div>
+      </div>
     </main>
 
-		<!-- Footer -->
+    <!-- Footer -->
     <footer class="footer">
       <div class="container">
         <div class="footer__inner">
           <div class="footer__left">
             <ul class="footer__navbar">
               <li class="footer__navbar-item">
-                <a href="#" class="footer__navbar-link">about us</a>
+                <a href="/about.html" class="footer__navbar-link">about us</a>
               </li>
               <li class="footer__navbar-item">
-                <a href="#" class="footer__navbar-link">project</a>
+                <a href="/events.html" class="footer__navbar-link">events</a>
               </li>
               <li class="footer__navbar-item">
-                <a href="#" class="footer__navbar-link">team</a>
+                <a href="/network.html" class="footer__navbar-link">team</a>
               </li>
             </ul>
             <ul class="footer__navbar">
               <li class="footer__navbar-item">
-                <a href="#" class="footer__navbar-link">projects</a>
+                <a href="/projects.html" class="footer__navbar-link"
+                  >projects</a
+                >
               </li>
               <li class="footer__navbar-item">
-                <a href="#" class="footer__navbar-link">contact us</a>
+                <div class="footer__navbar-link" id="contact-us-link">
+                  contact us
+                </div>
               </li>
               <li class="footer__navbar-item">
                 <a href="#" class="footer__navbar-link">privicy policy</a>
@@ -206,29 +274,29 @@
           <div class="footer__middle">
             <ul class="footer__icons">
               <li class="footer__icon">
-                <a class="footer__icon-link" href="">
+                <a class="footer__icon-link" href="#">
                   <img
                     class="footer__icon-img"
-                    src="images/face-footer.png"
-                    alt=""
+                    src="/assets/images/face-footer.png"
+                    alt="facebook"
                   />
                 </a>
               </li>
               <li class="footer__icon">
-                <a class="footer__icon-link" href="">
+                <a class="/assets/footer__icon-link" href="#">
                   <img
                     class="footer__icon-img"
-                    src="images/inst-footer.png"
-                    alt=""
+                    src="/assets/images/inst-footer.png"
+                    alt="instagram"
                   />
                 </a>
               </li>
               <li class="footer__icon">
-                <a class="footer__icon-link" href="">
+                <a class="footer__icon-link" href="#">
                   <img
                     class="footer__icon-img"
-                    src="images/vk-footer.png"
-                    alt=""
+                    src="/assets/images/vk-footer.png"
+                    alt="vk"
                   />
                 </a>
               </li>
@@ -236,8 +304,8 @@
             <div class="footer__copy">© 2021 Youth Included.</div>
           </div>
           <div class="footer__right">
-            <a href="#" class="footer__logo">
-              <img src="images/logo.png" alt="footer__logo" />
+            <a href="/index.html" class="footer__logo">
+              <img src="/assets/images/logo.png" alt="footer__logo" />
             </a>
           </div>
         </div>

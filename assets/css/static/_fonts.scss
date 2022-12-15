@@ -1,0 +1,48 @@
+@font-face {
+	font-family: 'ObjectSans-Slanted';
+	src: url('/assets/fonts/ObjectSans-Slanted.eot');
+	src: local('Object Sans Slanted'), local('ObjectSans-Slanted'),
+			url('/assets/fonts/ObjectSans-Slanted.eot?#iefix') format('embedded-opentype'),
+			url('/assets/fonts/ObjectSans-Slanted.woff2') format('woff2'),
+			url('/assets/fonts/ObjectSans-Slanted.woff') format('woff'),
+			url('/assets/fonts/ObjectSans-Slanted.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ObjectSans-Regular';
+	src: url('/assets/fonts/ObjectSans-Regular.eot');
+	src: local('Object Sans Regular'), local('ObjectSans-Regular'),
+			url('/assets/fonts/ObjectSans-Regular.eot?#iefix') format('embedded-opentype'),
+			url('/assets/fonts/ObjectSans-Regular.woff2') format('woff2'),
+			url('/assets/fonts/ObjectSans-Regular.woff') format('woff'),
+			url('/assets/fonts/ObjectSans-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ObjectSans-Heavy';
+	src: url('/assets/fonts/ObjectSans-Heavy.eot');
+	src: local('Object Sans Heavy'), local('ObjectSans-Heavy'),
+			url('/assets/fonts/ObjectSans-Heavy.eot?#iefix') format('embedded-opentype'),
+			url('/assets/fonts/ObjectSans-Heavy.woff2') format('woff2'),
+			url('/assets/fonts/ObjectSans-Heavy.woff') format('woff'),
+			url('/assets/fonts/ObjectSans-Heavy.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ObjectSansHeavySlanted';
+	src: url('/assets/fonts/ObjectSans-HeavySlanted.eot');
+	src: local('Object Sans Heavy Slanted'), local('ObjectSans-HeavySlanted'),
+			url('/assets/fonts/ObjectSans-HeavySlanted.eot?#iefix') format('embedded-opentype'),
+			url('/assets/fonts/ObjectSans-HeavySlanted.woff2') format('woff2'),
+			url('/assets/fonts/ObjectSans-HeavySlanted.woff') format('woff'),
+			url('/assets/fonts/ObjectSans-HeavySlanted.ttf') format('truetype');
+	font-weight: 800;
+	font-style: normal;
+}
+

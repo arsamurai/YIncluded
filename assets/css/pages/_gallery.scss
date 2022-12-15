@@ -1,0 +1,191 @@
+.gallery-page {
+	padding: 46px 0 129px;
+
+	.container {
+		max-width: 1360px;
+	}
+
+	.filter-btn {
+		display: none;
+	}
+	
+
+	&__title {
+		display: none;
+		text-align: right;
+		font-size: 36px;
+		line-height: 37px;
+		margin-bottom: 20px;
+		padding-right: 15px;
+	}
+
+	&__team {
+		display: none;
+		height: 176px;
+		width: 100%;
+		position: relative;
+		padding: 18px 0 25px;
+		&-main {
+			height: 100%;
+			margin-bottom: 25px;
+		}
+		&-title {
+			font-size: 36px;
+			line-height: 37px;
+			width: 200px;
+			position: absolute;
+			bottom: 29px;
+			left: 13px;
+		}
+		&-btn a{
+			max-width: 339px;
+			height: 33px;
+			font-size: 14px;
+			line-height: 14px;
+		}
+	}
+
+	&__albums-all {
+		display: none;
+		font-size: 20px;
+		line-height: 20px;
+		text-align: center;
+		padding: 18px;
+		color: $grey;
+	}
+
+  &__slider {
+    height: 570px;
+    width: 100%;
+    position: relative;
+
+    .slick-list,
+    .slick-slide {
+      height: 570px;
+    }
+    .slick-prev {
+      left: 0;
+    }
+    .slick-next {
+      right: 0;
+    }
+		&-item {
+			position: relative;
+		}
+		&-item p {
+			display: none;
+			font-size: 36px;
+			line-height: 37px;
+			position: absolute;
+			bottom: 8px;
+			left: 12px;
+			padding: 5px;
+		}
+  }
+	&__albums {
+		padding-top: 48px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+	&__album {										
+		max-width: 599px;
+		width: 100%;
+		height: 353px;
+		position: relative;
+		margin-bottom: 48px;
+		&-img {
+			height: 100%;
+		}
+		&-info {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			padding: 23px 27px 19px;
+			font-size: 40px;
+			line-height: 160%;
+			text-transform: uppercase;
+			background-color: $black;
+			color: $white;
+		}
+	}
+
+	@media screen and (max-width: 1250px) {
+		&__album {										
+			max-width: 100%;
+			height: 453px;
+		}
+	}
+
+	@media screen and (max-width: 768px) {
+		&__slider {
+			height: 379px;
+	
+			.slick-list,
+			.slick-slide {
+				height: 379px;
+			}
+		}
+		&__album {
+			height: 353px;
+		}
+	}
+
+	@media screen and (max-width: 576px) {
+		padding: 13px 0 52px;
+		.container {
+			padding: 0;
+		}
+		.filter-btn {
+			display: flex;
+		}
+		&__title {
+			display: block;
+		}
+		&__slider {
+			height: 179px;
+	
+			.slick-list,
+			.slick-slide {
+				height: 179px;
+			}
+
+			&-item p {
+				display: block;
+				font-size: 36px;
+				line-height: 37px;
+				position: absolute;
+				bottom: 8px;
+				left: 12px;
+				padding: 5px;
+			}
+		}
+		&__main {
+			border-bottom: 5px solid $black;
+		}
+		&__album {
+			height: 156px;
+			margin-bottom: 24px;
+			&-info {
+				padding: 10px 15px;
+				font-size: 36px;
+				line-height: 37px;
+				background-color: transparent;
+				color: $black;
+				text-transform: lowercase;
+			}
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		&__team {
+			display: block;
+		}
+	
+		&__albums-all {
+			display: block;
+		}
+	}
+
+}

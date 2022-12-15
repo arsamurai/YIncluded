@@ -9,7 +9,7 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
     <script
       src="https://code.jquery.com/jquery-3.6.0.min.js"
       integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -19,51 +19,52 @@
       type="text/javascript"
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
-    <script src="/js/app.js"></script>
+    <script src="/assets/js/app.js"></script>
     <title>YI</title>
   </head>
   <body>
+
     <!-- Main -->
-    <main id="person" class="person">
-      <div class="person-nav">
+    <main id="person-page" class="person-page">
+      <div class="person-page-nav">
         <a class="back-arrow" href="/network.html">
-          <img src="/images/back.png" alt="back-arrow" />
+          <img src="/assets/images/back.png" alt="back-arrow" />
         </a>
         <a class="upload-arrow" href="#">
-          <img src="/images/upload.png" alt="upload-arrow" />
+          <img src="/assets/images/upload.png" alt="upload-arrow" />
         </a>
       </div>
-      <div class="person-main">
-        <img src="/images/default.jpeg" alt="person" class="person-img" />
-        <div class="person-info">
+      <div class="person-page-main">
+        <img src="/assets/images/default.jpeg" alt="person-page" class="person-page-img" />
+        <div class="person-page-info">
           <div class="info-block">
-            <h5 class="person-name">Name Surname</h5>
-            <p class="person-spec">specialization</p>
-            <p class="person-country">country</p>
+            <h5 class="person-page-name">Name Surname</h5>
+            <p class="person-page-spec">specialization</p>
+            <p class="person-page-country">country</p>
           </div>
           <div class="info-block">
-            <div class="person-number">
+            <div class="person-page-number">
               <span>call me</span>
               <a href="tel:+420 000 000 000">+420 000 000 000</a>
             </div>
-            <div class="person-mail">
+            <div class="person-page-mail">
               <span>write to me</span>
               <a href="mailto:pokemon@seznam.cz">pokemon@seznam.cz</a>
             </div>
           </div>
         </div>
       </div>
-      <p class="person-text">
+      <p class="person-page-text">
         lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. ut enim ad minim
         veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
         commodo consequat.
       </p>
-      <div class="person-social">
+      <div class="person-page-social">
         <a href="#" class="social-item">
           <img
             class="social-item__img"
-            src="/images/person-inst.png"
+            src="/assets/images/person-inst.png"
             alt="instagram"
           />
           <p class="social-item__text">this pokemon in IG</p>
@@ -71,7 +72,7 @@
         <a href="#" class="social-item">
           <img
             class="social-item__img"
-            src="/images/person-face.png"
+            src="/assets/images/person-face.png"
             alt="facebook"
           />
           <p class="social-item__text">this pokemon in Facebook</p>
@@ -80,27 +81,27 @@
     </main>
 
     <!-- Footer -->
-    <footer class="footer">
+		<footer class="footer">
       <div class="container">
         <div class="footer__inner">
           <div class="footer__left">
             <ul class="footer__navbar">
               <li class="footer__navbar-item">
-                <a href="#" class="footer__navbar-link">about us</a>
+                <a href="/about.html" class="footer__navbar-link">about us</a>
               </li>
               <li class="footer__navbar-item">
-                <a href="#" class="footer__navbar-link">events</a>
+                <a href="/events.html" class="footer__navbar-link">events</a>
               </li>
               <li class="footer__navbar-item">
-                <a href="#" class="footer__navbar-link">team</a>
+                <a href="/network.html" class="footer__navbar-link">team</a>
               </li>
             </ul>
             <ul class="footer__navbar">
               <li class="footer__navbar-item">
-                <a href="#" class="footer__navbar-link">projects</a>
+                <a href="/projects.html" class="footer__navbar-link">projects</a>
               </li>
               <li class="footer__navbar-item">
-                <a href="#" class="footer__navbar-link">contact us</a>
+                <div class="footer__navbar-link" id="contact-us-link">contact us</div>
               </li>
               <li class="footer__navbar-item">
                 <a href="#" class="footer__navbar-link">privicy policy</a>
@@ -110,29 +111,29 @@
           <div class="footer__middle">
             <ul class="footer__icons">
               <li class="footer__icon">
-                <a class="footer__icon-link" href="">
+                <a class="footer__icon-link" href="#">
                   <img
                     class="footer__icon-img"
-                    src="images/face-footer.png"
-                    alt=""
+                    src="/assets/images/face-footer.png"
+                    alt="facebook"
                   />
                 </a>
               </li>
               <li class="footer__icon">
-                <a class="footer__icon-link" href="">
+                <a class="/assets/footer__icon-link" href="#">
                   <img
                     class="footer__icon-img"
-                    src="images/inst-footer.png"
-                    alt=""
+                    src="/assets/images/inst-footer.png"
+                    alt="instagram"
                   />
                 </a>
               </li>
               <li class="footer__icon">
-                <a class="footer__icon-link" href="">
+                <a class="footer__icon-link" href="#">
                   <img
                     class="footer__icon-img"
-                    src="images/vk-footer.png"
-                    alt=""
+                    src="/assets/images/vk-footer.png"
+                    alt="vk"
                   />
                 </a>
               </li>
@@ -140,8 +141,8 @@
             <div class="footer__copy">© 2021 Youth Included.</div>
           </div>
           <div class="footer__right">
-            <a href="#" class="footer__logo">
-              <img src="images/logo.png" alt="footer__logo" />
+            <a href="/index.html" class="footer__logo">
+              <img src="/assets/images/logo.png" alt="footer__logo" />
             </a>
           </div>
         </div>

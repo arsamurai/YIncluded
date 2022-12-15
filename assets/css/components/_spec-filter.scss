@@ -1,0 +1,60 @@
+.spec__filter {
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	max-width: 375px;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	z-index: 1001;
+	background-color: $white;
+	overflow-y: auto;
+	padding: 18px 31px;
+	transform: translateX(-100%);
+	transition: all linear 0.3s;
+	&-close {
+		position: absolute;
+		right: 16px;
+		top: 15px;
+		width: 20px;
+		height: 20px;
+		cursor: pointer;
+		span {
+			width: 20px;
+			height: 2px;
+			position: absolute;
+			top: 8px;
+			background-color: $black;
+		}
+		span:first-child {
+			transform: rotate(45deg);
+		}
+		span:nth-child(2) {
+			transform: rotate(-45deg);
+		}
+	}
+	&-item {
+		margin-bottom: 17px;
+	}
+	label {
+		font-size: 24px;
+		line-height: 25px;
+		letter-spacing: 0.07em;
+	}
+	.all {
+		font-size: 24px;
+		line-height: 25px;
+		letter-spacing: 0.07em;
+	}
+	&.active {
+		transform: translateY(0);
+	}
+	&-item.active {
+		font-family: "ObjectSans-Heavy";
+	}
+
+	@media screen and (max-width: 576px) {
+		max-width: 100%;
+	}
+}

@@ -1,0 +1,128 @@
+html {
+  position: relative;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+body {
+  font-family: 'ObjectSans-Regular', sans-serif;
+  font-size: 20px;
+  overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+
+input[type=checkbox] {
+	display: none;
+}
+
+section {
+  position: relative;
+  overflow: visible;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.icon svg {
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  position: relative;
+  max-width: 1252px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+	&-special {
+		max-width: 1440px;
+		padding: 0 40px;
+		width: 100%;
+  	margin: 0 auto;
+	}
+	&-big {
+		max-width: 1560px;
+		width: 100%;
+		margin: 0 auto;
+	}
+}
+
+.page-title {
+	font-size: 80px;
+	line-height: 82px;
+	letter-spacing: 0.06em;
+	text-align: right;
+	text-transform: lowercase;
+
+  @media screen and (max-width: 991px) {
+    font-size: 57px;
+		line-height: 57px;
+  }
+  @media screen and (max-width: 576px) {
+    font-size: 36px;
+		line-height: 37px;
+  }
+
+	&.about-title {
+		padding: 19px 0 11px;
+	}
+	&.events-title {
+		padding: 38px 0 28px;
+	}
+	&.projects-page-title {
+		padding: 31px 0 27px;
+	}
+	&.album-page-title {
+		padding-top: 17px;
+		padding-bottom: 21px;
+	}
+	&.news-page-title {
+		padding: 27px 0 5px;
+	}
+	&.article-title {
+		padding: 21px 25px 28px;
+		display: none;
+	}
+}
+
+.long-string {
+	font-family: "ObjectSans-Heavy";
+	font-size: 40px;
+	line-height: 160%;
+	white-space: nowrap;
+	span:not(:first-child) {
+		display: inline-block;
+	}
+	
+	@media screen and (max-width: 576px) {
+		font-family: "ObjectSans-Regular";
+		font-size: 36px;
+		line-height: 37px;
+		text-align: center;
+		span:not(:first-child) {
+			display: none;
+		}
+	}
+}
+
+.title {
+  font-size: 128px;
+  line-height: 131px;
+  padding: 10px 30px;
+  background-color: $black;
+  color: $white;
+	text-transform: lowercase;
+
+  @media screen and (max-width: 991px) {
+    font-size: 108px;
+    margin-left: 0;
+  }
+  @media screen and (max-width: 576px) {
+		padding: 10px 22px;
+    font-size: 40px;
+    line-height: 41px;
+  }
+}

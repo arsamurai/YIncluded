@@ -20,7 +20,7 @@
       src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script src="/assets/js/app.js"></script>
-    <title>UI | About us</title>
+    <title>YI</title>
   </head>
   <body>
     <!-- Header -->
@@ -30,7 +30,7 @@
           <a href="/about.html" class="sidebar-link">about us</a>
         </li>
         <li class="sidebar-item">
-          <a href="#" class="sidebar-link">gallery</a>
+          <a href="/gallery.html" class="sidebar-link">gallery</a>
         </li>
         <li class="sidebar-item">
           <a href="/events.html" class="sidebar-link">events</a>
@@ -50,11 +50,11 @@
       </div>
       <div class="contact-us" id="contact-us">
         <form action="" class="contact-us__form">
-          <div class="form__nav">
-            <div class="form__nav-back">
-              <img src="/assets/images/back.png" alt="back-arrow" />
-            </div>
-          </div>
+					<div class="form__nav">
+						<div class="form__nav-back">
+							<img src="/assets/images/back.png" alt="back-arrow" />
+						</div>
+					</div>
           <div class="form__info">
             <h3 class="form__info-title">Get in Touch!</h3>
             <p class="form__info-text">
@@ -104,7 +104,7 @@
           <button class="form__btn" type="submit">Send</button>
         </form>
       </div>
-      <div class="success popup" id="success">
+			<div class="success popup" id="success">
         <div class="popup__inner">
 					<p>Message successfuly sent</p>
 					<p>We will contact you within 48 hours</p>
@@ -119,98 +119,72 @@
     </header>
 
     <!-- Main -->
-    <main id="about">
-			<div class="about-title__wrapper">
-				<div class="container">
-					<h1 class="about-title page-title">about us</h1>
-				</div>
-			</div>
-      <div
-        class="gallery container-big"
-        style="background-image: url(/assets/images/default.jpeg)"
-      >
-        <div class="gallery__btn btn">
-          <a href="/gallery.html">our team in gallery</a>
+    <main id="album-page" class="album-page">
+      <div class="container-big">
+        <h3 class="album-page-title container page-title">album title</h3>
+        <div class="album-page__slider" id="album-page__slider">
+          <div class="album-page__slider-item">
+            <img src="/assets/images/default.jpeg" alt="album-page-img" />
+          </div>
+          <div class="album-page__slider-item">
+            <img src="/assets/images/default.jpeg" alt="album-page-img" />
+          </div>
+          <div class="album-page__slider-item">
+            <img src="/assets/images/default.jpeg" alt="album-page-img" />
+          </div>
         </div>
-      </div>
-      <div class="info">
-        <div class="container">
-          <div class="info__inner">
-            <div class="team">
-              <div class="team__info">
-                <img
-                  src="/assets/images/default.jpeg"
-                  alt="team-img"
-                  class="team__img"
-                />
-                <div class="team__main">
-                  <h5 class="team__main-title">president of the company</h5>
-                  <p class="team__main-text">
-                    almost heaven, west virginia, blue ridge mountains,
-                    shenandoah river, life is old there, older than the trees,
-                    younger than the mountains growing like a breath, take me
-                  </p>
+        <div class="album-page__main">
+          <div class="container">
+            <div class="album-page__photos">
+              <a href="/photo.html" class="album-page__photo">
+                <div class="album-page__photo-img">
+                  <img src="/assets/images/default.jpeg" alt="album-page-photo" />
                 </div>
-              </div>
-              <div class="team__btn btn">
-                <a href="/network.html"
-                  >click here to see all members of the team</a
-                >
-              </div>
+              </a>
+              <a href="/photo.html" class="album-page__photo">
+                <div class="album-page__photo-img">
+                  <img src="/assets/images/default.jpeg" alt="album-page-photo" />
+                </div>
+              </a>
+              <a href="/photo.html" class="album-page__photo">
+                <div class="album-page__photo-img">
+                  <img src="/assets/images/default.jpeg" alt="album-page-photo" />
+                </div>
+              </a>
+              <a href="/photo.html" class="album-page__photo">
+                <div class="album-page__photo-img">
+                  <img src="/assets/images/default.jpeg" alt="album-page-photo" />
+                </div>
+              </a>
+              <a href="/photo.html" class="album-page__photo">
+                <div class="album-page__photo-img">
+                  <img src="/assets/images/default.jpeg" alt="album-page-photo" />
+                </div>
+              </a>
+              <a href="/photo.html" class="album-page__photo">
+                <div class="album-page__photo-img">
+                  <img src="/assets/images/default.jpeg" alt="album-page-photo" />
+                </div>
+              </a>
+              <a href="/photo.html" class="album-page__photo">
+                <div class="album-page__photo-img">
+                  <img src="/assets/images/default.jpeg" alt="album-page-photo" />
+                </div>
+              </a>
+              <a href="/photo.html" class="album-page__photo">
+                <div class="album-page__photo-img">
+                  <img src="/assets/images/default.jpeg" alt="album-page-photo" />
+                </div>
+              </a>
+              <a href="/photo.html" class="album-page__photo">
+                <div class="album-page__photo-img">
+                  <img src="/assets/images/default.jpeg" alt="album-page-photo" />
+                </div>
+              </a>
             </div>
-            <div class="tabs">
-              <nav class="tabs__items">
-                <a href="#tab-1" class="tabs__item tabs__item-active"
-                  >mission</a
-                >
-                <a href="#tab-2" class="tabs__item">story</a>
-                <a href="#tab-3" class="tabs__item">areas</a>
-              </nav>
-              <div class="tabs__body">
-                <div id="tab-1" class="tabs__block tabs__block-active">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-                  dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                  minim veniam, quis nostrud exercitation ullamco laboris nisi
-                  ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                  ea commodo consequat.
-                </div>
-                <div id="tab-2" class="tabs__block">
-                  Ipsum lorem dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-                  dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                  minim veniam, quis nostrud exercitation ullamco laboris nisi
-                  ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                  ea commodo consequat.
-                </div>
-                <div id="tab-3" class="tabs__block">
-                  Sit amet lorem ipsum dolor, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum
-                  dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                  tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                  minim veniam, quis nostrud exercitation ullamco laboris nisi
-                  ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet,
-                  consectetur adipiscing elit, sed do eiusmod tempor incididunt
-                  ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-                  quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-                  ea commodo consequat.
-                </div>
-              </div>
-            </div>
+          </div>
+          <div class="album-page__btn btn">
+            <a href="#">upload photos</a>
           </div>
         </div>
       </div>
@@ -239,9 +213,7 @@
                 >
               </li>
               <li class="footer__navbar-item">
-                <div class="footer__navbar-link" id="contact-us-link">
-                  contact us
-                </div>
+                <div class="footer__navbar-link" id="contact-us-link">contact us</div>
               </li>
               <li class="footer__navbar-item">
                 <a href="#" class="footer__navbar-link">privicy policy</a>
