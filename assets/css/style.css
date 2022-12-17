@@ -815,6 +815,9 @@ meter {
 #index .preview__sidebar-item {
   margin-bottom: 3vh;
 }
+#index .preview__sidebar-item .sidebar-link {
+  cursor: pointer;
+}
 #index .preview__image {
   width: 100%;
   max-height: 100%;

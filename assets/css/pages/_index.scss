@@ -27,6 +27,9 @@
       background-color: $white;
       &-item {
         margin-bottom: 3vh;
+				.sidebar-link {
+					cursor: pointer;
+				}
       }
     }
     &__image {
